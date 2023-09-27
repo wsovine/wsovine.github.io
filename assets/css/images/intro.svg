@@ -3,7 +3,7 @@
     <style type="text/css"><![CDATA[
 		line
 		{
-			stroke: rgba(201, 151, 0, .1);
+			stroke: rgba(255, 255, 255, .05);
 			stroke-width: 1px;
 		}
     ]]></style>
