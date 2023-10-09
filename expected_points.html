@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Expected Points</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Will Sovine</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Expected Points</a></li>
+						<li><a href="" class="disabled">Experiments</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Predicting Expected Points</h1>
+							<span class="image fit"><img src="images/expected_points/expected_points_wide.png" alt="" /></span>
+							<p><i>Audience: Knowledgeable of football and interested in advanced statistics.</i></p>
+
+							<!-- Introduction -->
+							<h2>Introduction</h2>
+							<hr/>
+							<h3>What are expected points?</h3>
+							<p>
+								Expected points are how many points we can expect to be scored next, either by the
+								current team on offense or the current team on defense (if expected points are negative).
+							</p>
+
+							<h3>Objective</h3>
+							<p>
+								Predicting expected points in NCAA football hinges on the nuanced situation of each
+								play. Most models are based on the assumption that all yardlines are different
+								and offer different expected outcomes, i.e. the closer you are to your opponents
+								endzone, the more points you are likely to score. Machine learning (ML) models offer
+								a potent tool to refine these forecasts. This experiment assesses various ML
+								algorithms, prioritizing situational context integration. Our objectives are:
+								<ol>
+									<li>Situational Context Integration:
+										<p>Incorporate dynamic play factors (e.g., down, distance, field position)
+											for precise predictions.</p>
+									</li>
+									<li>Model Selection and Adaptation:
+										<p>Evaluate models for adaptability to NCAA football's dynamic nature.</p>
+									</li>
+									<li>Context-Specific Performance Metrics:
+										<p>Employ tailored metrics for precise evaluation.</p>
+									</li>
+								</ol>
+							</p>
+							<p>
+								This research aims to enhance play-by-play analysis, empowering decision-makers
+								with context-aware insights and enabling further advanced metrics
+								for predicting outcomes.
+							</p>
+
+							<!-- Data -->
+							<h2>Data</h2>
+							<hr/>
+
+							<h3>Load Data</h3>
+							<p>The data that we are using comes from
+								<a href="https://collegefootballdata.com">collegefootballdata.com</a>.
+								We are using the
+								play-by-play data from the 2022 season and the first few weeks of the 2023 season.
+								Cleanup and transformations have already been performed on the dataset,
+								but it still isn't perfect and I think it is mostly due to the source which CFBD
+								pulls the data from. However, I am hopeful that the noise of the imperfections
+								will be muffled with such a large sample size.</p>
+							<p><a href="#" class="button">Download Data File</a></p>
+							<pre><code>
+import pandas as pd
+
+df_pbp = pd.load_csv('')
+							</code></pre>
+
+							<h3>Split Data</h3>
+							<pre><code>
+from sklearn.model_selection import train_test_split
+
+X = df_pbp.drop('next_points_scored', axis=1)
+y = df_pbp.next_points_scored
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3)
+							</code></pre>
+
+
+							<!-- EDA -->
+							<h2>EDA</h2>
+							<hr/>
+							<p>
+								<b>Yards to Goal</b><br/>
+								<i>Yards to the other team's endzone.</i><br/>
+								Values seem to make sense. There is a high spike at 75 yards which would be
+								from teams starting at their own 25 yardline after a touchback.
+								The distribution seems to slope downwards towards either endzone
+								(i.e. 0 yards to goal and 100 yards to goal).
+							</p>
+							<p>
+								<b>Down</b><br/>
+								<i>What down the play is being run on.</i><br/>
+								We see first downs the most and fourth downs the least. This is intuitive
+								considering we expect a new first down every time a team starts their drive or
+								successfully gains ~10 yards. Fourth downs would be the least common since a team
+								needs to run 3 consecutive unsuccessful plays to reach a fourth down.
+							</p>
+							<p>
+								<b>Distance</b><br/>
+								<i>Yards needed for a first down or a touchdown.</i><br/>
+								Huge spike at 10 yards. Most every drive will start at 10 yards and then we see
+								10 yards again every first down. Distribution is bound at zero yards and we
+								see a right skew where distance is greater than 10 yards, these would result
+								from penalties or plays that went for a loss.
+							</p>
+							<pre><code>
+import seaborn as sns
+
+sns.pairplot(X_train.join(y_train))
+							</code></pre>
+							<span class="image"><img src="images/expected_points/ep_pairplot.png" alt="" /></span>
+
+							<h3>Correlation</h3>
+							<p>Based on the above plots and explanations, I expect to see some correlation between
+							our predictor variables. For example, a lot of plays that have 75 yards to goal are
+							going to be first and 10 as this is the typical start of a drive after a
+							kickoff or punt touchback.</p>
+
+							<pre><code>
+import numpy as np
+
+# Compute the correlation matrix
+corr = X_train.join(y_train).corr()
+
+# Generate a mask for the upper triangle
+mask = np.triu(np.ones_like(corr, dtype=bool))
+
+# Generate a custom diverging colormap
+cmap = sns.diverging_palette(230, 20, as_cmap=True)
+
+# Draw the heatmap with the mask and correct aspect ratio
+sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
+            square=True, linewidths=.5, cbar_kws={"shrink": .5})
+							</code></pre>
+
+							<span class="image"><img src="images/expected_points/ep_corplot.png" alt="" /></span>
+
+
+							<!-- Linear Regression -->
+							<p/>
+							<h2>Linear Regression</h2>
+							<hr/>
+							<p>
+								This will be our baseline model. Simple linear regression using yards-to-goal
+								as our predictor.
+							</p>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
