@@ -85,7 +85,7 @@
 								but it still isn't perfect and I think it is mostly due to the source which CFBD
 								pulls the data from. However, I am hopeful that the noise of the imperfections
 								will be muffled with such a large sample size.</p>
-							<p><a href="#" class="button">Download Data File</a></p>
+							<p><a href="https://github.com/wsovine/data/blob/main/expected_points_pbp.csv" class="button">Download Data File</a></p>
 							<pre><code>
 import pandas as pd
 
@@ -172,6 +172,273 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
 								as our predictor.
 							</p>
 
+							<pre><code>
+from sklearn.linear_model import LinearRegression
+
+lr = LinearRegression()
+lr.fit(X_train[['yards_to_goal']], y_train)
+
+print(f"R2 = {lr.score(X_train[['yards_to_goal']], y_train)}")
+
+y_pred = lr.predict(X_test[['yards_to_goal']])
+
+rmse = mean_squared_error(y_test, y_pred, squared=False)
+print(f'{rmse = }')
+
+mae = median_absolute_error(y_test, y_pred)
+print(f'{mae = }')
+							</code></pre>
+
+							<p>
+								R2 = 0.078 <br/>
+								RMSE = 5.232 <br/>
+								MAE = 4.311
+							</p>
+
+							<pre><code>
+print(f'Intercept: {lr.intercept_}')
+print(f'Coefficient: {lr.coef_[0]}')
+							</code></pre>
+
+							<p>
+								Intercept: 5.185 <br/>
+								Coefficient: -0.062
+							</p>
+
+							<h3>Predictability</h3>
+							<p>
+								The linear regression model using only the yards-to-goal predictor explains about 8% of the variance of the next points scored and the predictions are off by 4.3 or 5.2 points, depending on which error metric we look at, on average.
+							</p>
+
+							<h3>Explainability</h3>
+							<p>
+								A linear regression model does have the benefit of being very explainable. It tells us that on average, as the offensive team advances 1 yard closer to the opponents endzone, the next points scored increases by 0.06. With this model, we can say that every yardline is worth 0.06 points and we could start to measure a team's efficiency on each play.
+							</p>
+							<p>
+								<i>For example:</i>
+								Your team starts with the ball on their own 25 yardline. On their first play, they run the ball for a 5 yard gain. Using our above model, they have increased their expected points by 0.3.
+
+								$${ExpectedPointsAdded} = {yards\_gained} * 0.06$$
+
+								Do that 10 more times, and you've got yourself a field goal (0.3 * 10 = 3 Points). This seems to make sense as they would be on the opponents 25 yardline, certainly in field goal range. In fact, they would be a little above those expected 3 points at the opponent's 25 yardline when we factor in the intercept of 5.2. At the opponent's 25 yardline, the expected points are 3.7.
+
+								$${ExpectedPoints} = {yards\_to\_goal} * -0.06 + 5.2$$
+							</p>
+
+
+							<!-- LASSO Regression -->
+							<h2>LASSO Regression</h2>
+							<hr/>
+							<p>
+								Next, let's see if adding more independent variables to our model helps with prediction.
+							</p>
+
+							<p>
+								<i>Why not add more predictors to the linear regression model?</i><br/>
+								My concern with that is multicollinearity. There is some level of correlation between our independent variables and LASSO works well for minimizing multicollinearity because it incorporates a penalty term.
+							</p>
+
+							<p>
+								I also want to see if any of the predictors that I've decided to use are not very good. LASSO regression can tell us that because of the previously mentioned penalty term. It is an L1 penalty as opposed to an L2 penalty, like you would see in ridge regression, and it will shrink the coefficient down to zero if the predictor is not helpful.
+							</p>
+
+							<pre><code>
+# First let's scale our predictors using a standard scale.
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+
+X_train_std = scaler.fit_transform(X_train)
+X_test_std = scaler.transform(X_test)
+
+# Next, fit the model
+from sklearn.linear_model import LassoCV
+
+lasso = LassoCV()
+
+lasso.fit(X_train_std, y_train)
+
+print(f"R2 = {lasso.score(X_train_std, y_train)}")
+
+y_pred = lasso.predict(X_test_std)
+
+rmse = mean_squared_error(y_test, y_pred, squared=False)
+print(f'{rmse = }')
+
+mae = median_absolute_error(y_test, y_pred)
+print(f'{mae = }')
+							</code></pre>
+
+							<p>
+								R2 = 0.091 <br/>
+								RMSE = 5.189 <br/>
+								MAE = 4.298
+							</p>
+
+
+							<h3>Predictability</h3>
+							<p>
+								First of all, our predictions didn't improve much. We've gone from an R2 of 8% in
+								the ordinary least squares model with 1 predictor to an R2 of 9% in the LASSO with 4
+								predictors. The error measures improved slightly, but again, not by much.
+							</p>
+
+							<h3>Explainability</h3>
+							<p>Let's check the coefficients to see if any were reduced to zero.</p>
+
+							<pre><code>
+pd.DataFrame([('alpha', lasso.alpha_), ('intercept', lasso.intercept_)] + list(zip(X.columns, lasso.coef_)))
+							</code></pre>
+
+							<div class="table-wrapper">
+								<table>
+									<thead>
+									<tr>
+										<th>Variable</th>
+										<th>Value</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>alpha</td>
+										<td>0.0015</td>
+									</tr>
+									<tr>
+										<td>intercept</td>
+										<td>2.009</td>
+									</tr>
+									<tr>
+										<td>yards_to_goal</td>
+										<td>-1.484</td>
+									</tr>
+									<tr>
+										<td>distance</td>
+										<td>-0.332</td>
+									</tr>
+									<tr>
+										<td>down_1</td>
+										<td>0.318</td>
+									</tr>
+									<tr>
+										<td>down_2</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>down_3</td>
+										<td>-0.329</td>
+									</tr>
+									<tr>
+										<td>down_4</td>
+										<td>-0.305</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<p>
+								Alpha is used to shrink the coefficients and a larger alpha would shrink them down to
+								zero. The cross validation selected a small alpha value, meaning the coefficients
+								didn't need much shrinkage. This all tells me that we have mostly valid predictors
+								selected.
+							</p>
+
+							<p>
+								However, we do see that the variable for 2nd down was shrunk to zero, meaning that a
+								play being second down doesn't tell us much (at least when it comes to
+								predicting the next points scored). 1st down has a positive impact on the next
+								points scored whereas 3rd and 4th down have negative impacts on the next points scored,
+								meaning that on 3rd and 4th down plays we are starting to tilt in the direction
+								indicating that the team on defense will be scoring the next points.
+							</p>
+
+							<p>
+								We are able to tell from the magnitude of the coefficients which variables
+								are the most significant predictors:
+							</p>
+							<ol>
+								<li>Yards to goal</li>
+								<li>Distance</li>
+								<li>3rd Down</li>
+								<li>1st Down</li>
+								<li>4th Down</li>
+							</ol>
+
+							<!-- XGBoost -->
+							<h2>XGBoost</h2>
+							<hr/>
+							<p>
+								Next we'll try to achieve better predictions with a boosted model, specifically we
+								will use XGBoost. This model can be more flexible than the models we trained
+								previously, i.e. better at predicting with non-linear relationships.
+							</p>
+
+							<pre><code>
+import xgboost as xgb
+
+xreg = xgb.XGBRegressor()
+
+xreg.fit(X_train, y_train)
+
+y_pred = xreg.predict(X_test)
+
+rmse = mean_squared_error(y_test, y_pred, squared=False)
+print(f'{rmse = }')
+
+mae = median_absolute_error(y_test, y_pred)
+print(f'{mae = }')
+							</code></pre>
+
+							<p>
+								RMSE = 5.21 <br/>
+								MAE = 4.291
+							</p>
+
+							<h3>Predictability</h3>
+							<p>
+								As it turns out, we do not benefit from the added flexibility that comes with the
+								more complex boosted model. RMSE and MAE are similar to what we saw previously.
+							</p>
+
+							<h3>Explainability</h3>
+							<p>
+								We can use the Shapley values to identify the most important predictors like we
+								did with the coefficients in the LASSO Regression. Also like the LASSO Regression,
+								we see the same story as far as which variable is the most important, yards-to-goal.
+							</p>
+
+							<pre><code>
+import shap
+explainer = shap.Explainer(xreg)
+shap_values = explainer(X)
+shap.plots.bar(shap_values)
+							</code></pre>
+							<span class="image"><img src="images/expected_points/shap_importance.png" alt="" /></span>
+
+							<p>
+								Some functionality that I love to use in the shap package is being able to look at an
+								individual observation to see how the different predictors impact the final prediction.
+								In the below image, we see that the model is predicting 4.4 points for the offensive
+								team because they are running a play on 1st and 10 at the opponents 21-yardline.
+							</p>
+
+							<pre><code>
+from random import randint
+random_play = randint(0, X.shape[0])
+shap.plots.waterfall(shap_values[random_play])
+							</code></pre>
+
+							<span class="image"><img src="images/expected_points/shap_play.png" alt="" /></span>
+
+							<br/><br/>
+							<!-- Conclusion -->
+							<h2>Conclusion</h2>
+							<p>
+								In our evaluation of ML models for expected points prediction, we compared simple linear regression, lasso regression, and a boosted regression model. While all showed similar performance, lasso regression slightly outperformed the others. Its adeptness in handling multicollinearity proved advantageous in this dynamic context. Each model offers unique strengths, with simple linear regression's interpretability and the boosted model's ability to capture complex relationships. Overall, lasso regression stands as the top choice for its balanced performance and potential for practical application in NCAA football analytics.
+							</p>
+							<p>
+								While we are only able to explain 9% of the expected point variance with our selected variables and model, that's ok. We will seek to explain more of the variance with future models (e.g. offensive strength, defensive strength, homefield advantage, etc.). The purpose of this model will be to give a baseline that we can use to calculate the things like team strength and homefield advantage.
+							</p>
+
 						</div>
 					</section>
 
@@ -194,6 +461,8 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+			<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 	</body>
 </html>
