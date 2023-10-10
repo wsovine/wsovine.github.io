@@ -85,21 +85,30 @@
 								but it still isn't perfect and I think it is mostly due to the source which CFBD
 								pulls the data from. However, I am hopeful that the noise of the imperfections
 								will be muffled with such a large sample size.</p>
-							<p><a href="https://github.com/wsovine/data/blob/main/expected_points_pbp.csv" class="button">Download Data File</a></p>
 							<pre><code>
 import pandas as pd
 
-df_pbp = pd.load_csv('')
+df_pbp = pd.load_csv('https://github.com/wsovine/data/blob/main/expected_points_pbp.csv')
 							</code></pre>
 
-							<h3>Split Data</h3>
+							<h3>Process & Split Data</h3>
 							<pre><code>
 from sklearn.model_selection import train_test_split
 
 X = df_pbp.drop('next_points_scored', axis=1)
 y = df_pbp.next_points_scored
 
+# one-hot encode the down variable, since it should be considered a categorical variable rather than a continuous variable
+X = X.drop('down', axis=1).join(pd.get_dummies(X.down, prefix='down_'))
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3)
+# EDA dataframe that we will use should only include our training data points so that we don not introduce any bias
+df_eda = df_pbp.iloc[X_train.index]
+
+print(f'{X_train.shape = }')
+print(f'{X_test.shape = }')
+print(f'{y_train.shape = }')
+print(f'{y_test.shape = }')
 							</code></pre>
 
 
@@ -133,7 +142,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3)
 							<pre><code>
 import seaborn as sns
 
-sns.pairplot(X_train.join(y_train))
+sns.pairplot(df_eda)
 							</code></pre>
 							<span class="image"><img src="images/expected_points/ep_pairplot.png" alt="" /></span>
 
@@ -147,7 +156,7 @@ sns.pairplot(X_train.join(y_train))
 import numpy as np
 
 # Compute the correlation matrix
-corr = X_train.join(y_train).corr()
+corr = df_eda.corr()
 
 # Generate a mask for the upper triangle
 mask = np.triu(np.ones_like(corr, dtype=bool))
