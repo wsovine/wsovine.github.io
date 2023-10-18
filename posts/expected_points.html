@@ -9,18 +9,18 @@
 		<title>Expected Points</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Will Sovine</a>
+				<a href="../index.html" class="title">Will Sovine</a>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Expected Points</a></li>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../generic.html" class="active">Expected Points</a></li>
 						<li><a href="" class="disabled">Experiments</a></li>
 					</ul>
 				</nav>
@@ -33,7 +33,7 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Predicting Expected Points</h1>
-							<span class="image fit"><img src="images/expected_points/expected_points_wide.png" alt="" /></span>
+							<span class="image fit"><img src="../images/expected_points/expected_points_wide.png" alt="" /></span>
 
 							<p><i>Audience: Basic knowledge about football and machine learning models.</i></p>
 
@@ -145,7 +145,7 @@ import seaborn as sns
 
 sns.pairplot(df_eda)
 							</code></pre>
-							<span class="image"><img src="images/expected_points/ep_pairplot.png" alt="" /></span>
+							<span class="image"><img src="../images/expected_points/ep_pairplot.png" alt="" /></span>
 
 							<h3>Correlation</h3>
 							<p>Based on the above plots and explanations, I expect to see some correlation between
@@ -170,7 +170,7 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
             square=True, linewidths=.5, cbar_kws={"shrink": .5})
 							</code></pre>
 
-							<span class="image"><img src="images/expected_points/ep_corplot.png" alt="" /></span>
+							<span class="image"><img src="../images/expected_points/ep_corplot.png" alt="" /></span>
 
 
 							<!-- Linear Regression -->
@@ -422,7 +422,7 @@ explainer = shap.Explainer(xreg)
 shap_values = explainer(X)
 shap.plots.bar(shap_values)
 							</code></pre>
-							<span class="image"><img src="images/expected_points/shap_importance.png" alt="" /></span>
+							<span class="image"><img src="../images/expected_points/shap_importance.png" alt="" /></span>
 
 							<p>
 								Some functionality that I love to use in the shap package is being able to look at an
@@ -437,7 +437,7 @@ random_play = randint(0, X.shape[0])
 shap.plots.waterfall(shap_values[random_play])
 							</code></pre>
 
-							<span class="image"><img src="images/expected_points/shap_play.png" alt="" /></span>
+							<span class="image"><img src="../images/expected_points/shap_play.png" alt="" /></span>
 
 							<br/><br/>
 							<!-- Conclusion -->
@@ -464,13 +464,13 @@ shap.plots.waterfall(shap_values[random_play])
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
 			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 			<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
