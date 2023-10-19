@@ -6,22 +6,21 @@
 -->
 <html>
 	<head>
-		<title>Opponent Adjusted Strength</title>
+		<title>2023 FBS Opponent Adjusted Strength</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="../index.html" class="title">Will Sovine</a>
+				<a href="../../index.html" class="title">Will Sovine</a>
 				<nav>
 					<ul>
-						<li><a href="../index.html">Home</a></li>
-						<li><a href="../generic.html" class="active">Opponent Adjusted Strength</a></li>
-						<li><a href="" class="disabled">Experiments</a></li>
+						<li><a href="../../index.html">Home</a></li>
+						<li><a href="#" class="active">Opponent Adjusted Strength</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -33,7 +32,7 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Calculate Opponent Adjusted Strength</h1>
-							<span class="image fit"><img src="../images/opponent_adjusted_strength/helmet_clash_wide.png" alt="" /></span>
+							<span class="image fit"><img src="../../images/opponent_adjusted_strength/helmet_clash_wide.png" alt="" /></span>
 
 							<p><i>Audience: Basic knowledge about football and statistical modeling.</i></p>
 
@@ -190,7 +189,7 @@ df_team_stats = (
 df_results[df_results.coef_name == 'hfa']
 							</code></pre>
 
-							<span class="image"><img src="../images/opponent_adjusted_strength/hfa_coef.png" alt="" /></span>
+							<span class="image"><img src="../../images/opponent_adjusted_strength/hfa_coef.png" alt="" /></span>
 
 							<p>
 								At around 0.007 points per play we can start to understand how big of an impact
@@ -217,7 +216,7 @@ df_results[df_results.coef_name == 'hfa']
     .sort_values('adj_off_epa', ascending=False)
     .head()
 )							</code></pre>
-							<span class="image"><img src="../images/opponent_adjusted_strength/top_5_offense.png" alt="" /></span>
+							<span class="image"><img src="../../images/opponent_adjusted_strength/top_5_offense.png" alt="" /></span>
 
 
 
@@ -233,7 +232,7 @@ df_results[df_results.coef_name == 'hfa']
     .sort_values('adj_def_epa', ascending=False)
     .head()
 )							</code></pre>
-							<span class="image"><img src="../images/opponent_adjusted_strength/top_5_defense.png" alt="" /></span>
+							<span class="image"><img src="../../images/opponent_adjusted_strength/top_5_defense.png" alt="" /></span>
 
 							<p>
 								The outcome above reveals a big problem with this ridge regression method for
@@ -348,13 +347,13 @@ fig.add_annotation(
 			</footer>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
 			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 			<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
