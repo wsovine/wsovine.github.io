@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Kelly Criterion Calculator (Amplified Risk)</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="../../assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="../../assets/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Header -->
+<header id="header">
+    <a href="../../index.html" class="title">Will Sovine</a>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#" class="active">Kelly Criterion Calculator</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <h1 class="major">Kelly Criterion Calculator (Amplified Risk)</h1>
+
+            <section>
+                <form method="post" action="#">
+                    <h2>Input</h2>
+                    <div class="row gtr-uniform">
+                        <div class="col-6">
+                            <label for="bankroll">Bankroll</label>
+                            <input type="number" name="bankroll" id="bankroll" value=1000 placeholder="Bankroll" />
+                        </div>
+                        <div class="col-6">
+                            <label for="odds">Odds</label>
+                            <input type="number" name="odds" id="odds" value="" placeholder="Odds" />
+                        </div>
+                        <div class="col-6">
+                            <label for="actual-probability">Actual Probability</label>
+                            <input type="number" name="actual-probability" id="actual-probability" value="" placeholder="Actual Probability" min=0 max=1 />
+                        </div>
+                        <div class="col-6">
+                            <br>
+                            <button class="button primary fit" type="button" onclick="calculate()">Calculate</button>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h2>Calculated Values</h2>
+                    <div class="row gtr-uniform">
+                        <div class="col-6">
+                            <label for="implied-probability">Implied Probability</label>
+                            <input type="number" name="implied-probability" id="implied-probability" value="" placeholder="Implied Probability" disabled/>
+                        </div>
+                        <div class="col-6">
+                            <label for="bet-amount">Bet Amount</label>
+                            <input type="number" name="bet-amount" id="bet-amount" value="" placeholder="Bet Amount" disabled/>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer" class="wrapper alt">
+    <div class="inner">
+        <ul class="menu">
+            <li>&copy; Will Sovine. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/jquery.scrolly.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    function calculate() {
+        // Get form values
+        const odds = parseFloat(document.getElementById('odds').value);
+        const bankroll = parseFloat(document.getElementById('bankroll').value);
+        const actualProbability = parseFloat(document.getElementById('actual-probability').value);
+
+        // Calculate implied probability
+        const impliedProbability = calculateImpliedProbability(odds);
+
+        // Update implied probability field
+        document.getElementById('implied-probability').value = impliedProbability.toFixed(2);
+
+        // Calculate Kelly Criterion
+        const kellyCriterion = calculateKellyCriterion(bankroll, impliedProbability, actualProbability);
+
+        // Update bet amount field
+        document.getElementById('bet-amount').value = kellyCriterion.toFixed(2);
+    }
+
+    function calculateImpliedProbability(odds) {
+        if (odds > 0) {
+            return 100 / (odds + 100);
+        } else {
+            return odds / (odds - 100);
+        }
+    }
+
+    function calculateKellyCriterion(bankroll, impliedProbability, actualProbability) {
+        let dec = 1 / impliedProbability;
+        // let dec = (1 / impliedProbability) - 1;
+        let probLoss = 1 - actualProbability;
+        let amount = (actualProbability - probLoss / dec) * (bankroll / 10);
+        if (actualProbability <= impliedProbability) {
+            return 0;
+        } else {
+            return amount;
+        }
+    }
+</script>
+
+
+</body>
+</html>
