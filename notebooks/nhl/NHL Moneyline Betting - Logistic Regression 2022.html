@@ -14826,7 +14826,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="n">dec</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span> <span class="o">/</span> <span class="o">-</span><span class="n">odds</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">dec</span> <span class="o">=</span> <span class="p">(</span><span class="n">odds</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">dec</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">dec</span> <span class="c1">#+ 1</span>
 
 <span class="k">def</span> <span class="nf">profitize</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">aggregated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">kelly_scale</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
     <span class="n">df</span><span class="p">[</span><span class="s1">'away_win'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">home_win</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -14966,264 +14966,264 @@ Average ROC AUC: 0.6478545892291949
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
 <style type="text/css">
-#T_10e98_row0_col0, #T_10e98_row0_col1, #T_10e98_row13_col0, #T_10e98_row16_col0 {
+#T_5ebfe_row0_col0, #T_5ebfe_row0_col1, #T_5ebfe_row13_col0, #T_5ebfe_row16_col0 {
   background-color: #20a386;
   color: #f1f1f1;
 }
-#T_10e98_row1_col0, #T_10e98_row9_col0 {
+#T_5ebfe_row1_col0, #T_5ebfe_row9_col0 {
   background-color: #24868e;
   color: #f1f1f1;
 }
-#T_10e98_row1_col1, #T_10e98_row3_col0, #T_10e98_row19_col0 {
+#T_5ebfe_row1_col1, #T_5ebfe_row3_col0, #T_5ebfe_row19_col0 {
   background-color: #26ad81;
   color: #f1f1f1;
 }
-#T_10e98_row2_col0, #T_10e98_row10_col0, #T_10e98_row18_col0 {
+#T_5ebfe_row2_col0, #T_5ebfe_row10_col0, #T_5ebfe_row18_col0 {
   background-color: #1f9a8a;
   color: #f1f1f1;
 }
-#T_10e98_row2_col1 {
+#T_5ebfe_row2_col1 {
   background-color: #1e9d89;
   color: #f1f1f1;
 }
-#T_10e98_row3_col1 {
+#T_5ebfe_row3_col1 {
   background-color: #3aba76;
   color: #f1f1f1;
 }
-#T_10e98_row4_col0, #T_10e98_row6_col0, #T_10e98_row7_col0, #T_10e98_row17_col0 {
+#T_5ebfe_row4_col0, #T_5ebfe_row6_col0, #T_5ebfe_row7_col0, #T_5ebfe_row17_col0 {
   background-color: #1f9f88;
   color: #f1f1f1;
 }
-#T_10e98_row4_col1 {
+#T_5ebfe_row4_col1 {
   background-color: #25ac82;
   color: #f1f1f1;
 }
-#T_10e98_row5_col0, #T_10e98_row11_col0 {
+#T_5ebfe_row5_col0, #T_5ebfe_row11_col0 {
   background-color: #2cb17e;
   color: #f1f1f1;
 }
-#T_10e98_row5_col1 {
+#T_5ebfe_row5_col1 {
   background-color: #67cc5c;
   color: #000000;
 }
-#T_10e98_row6_col1 {
+#T_5ebfe_row6_col1 {
   background-color: #31b57b;
   color: #f1f1f1;
 }
-#T_10e98_row7_col1 {
+#T_5ebfe_row7_col1 {
   background-color: #2db27d;
   color: #f1f1f1;
 }
-#T_10e98_row8_col0 {
+#T_5ebfe_row8_col0 {
   background-color: #32b67a;
   color: #f1f1f1;
 }
-#T_10e98_row8_col1 {
+#T_5ebfe_row8_col1 {
   background-color: #54c568;
   color: #000000;
 }
-#T_10e98_row9_col1, #T_10e98_row12_col1 {
+#T_5ebfe_row9_col1, #T_5ebfe_row12_col1 {
   background-color: #2fb47c;
   color: #f1f1f1;
 }
-#T_10e98_row10_col1, #T_10e98_row14_col0, #T_10e98_row15_col0, #T_10e98_row20_col0, #T_10e98_row23_col0 {
+#T_5ebfe_row10_col1, #T_5ebfe_row14_col0, #T_5ebfe_row15_col0, #T_5ebfe_row20_col0, #T_5ebfe_row23_col0 {
   background-color: #22a884;
   color: #f1f1f1;
 }
-#T_10e98_row11_col1 {
+#T_5ebfe_row11_col1 {
   background-color: #52c569;
   color: #000000;
 }
-#T_10e98_row12_col0, #T_10e98_row22_col0 {
+#T_5ebfe_row12_col0, #T_5ebfe_row22_col0 {
   background-color: #3bbb75;
   color: #f1f1f1;
 }
-#T_10e98_row13_col1 {
+#T_5ebfe_row13_col1 {
   background-color: #218e8d;
   color: #f1f1f1;
 }
-#T_10e98_row14_col1, #T_10e98_row19_col1 {
+#T_5ebfe_row14_col1, #T_5ebfe_row19_col1 {
   background-color: #42be71;
   color: #f1f1f1;
 }
-#T_10e98_row15_col1 {
+#T_5ebfe_row15_col1 {
   background-color: #23a983;
   color: #f1f1f1;
 }
-#T_10e98_row16_col1 {
+#T_5ebfe_row16_col1 {
   background-color: #22a785;
   color: #f1f1f1;
 }
-#T_10e98_row17_col1 {
+#T_5ebfe_row17_col1 {
   background-color: #46c06f;
   color: #f1f1f1;
 }
-#T_10e98_row18_col1 {
+#T_5ebfe_row18_col1 {
   background-color: #21a685;
   color: #f1f1f1;
 }
-#T_10e98_row20_col1 {
+#T_5ebfe_row20_col1 {
   background-color: #34b679;
   color: #f1f1f1;
 }
-#T_10e98_row21_col0 {
+#T_5ebfe_row21_col0 {
   background-color: #44bf70;
   color: #f1f1f1;
 }
-#T_10e98_row21_col1 {
+#T_5ebfe_row21_col1 {
   background-color: #75d054;
   color: #000000;
 }
-#T_10e98_row22_col1 {
+#T_5ebfe_row22_col1 {
   background-color: #69cd5b;
   color: #000000;
 }
-#T_10e98_row23_col1 {
+#T_5ebfe_row23_col1 {
   background-color: #73d056;
   color: #000000;
 }
-#T_10e98_row24_col0 {
+#T_5ebfe_row24_col0 {
   background-color: #228b8d;
   color: #f1f1f1;
 }
-#T_10e98_row24_col1 {
+#T_5ebfe_row24_col1 {
   background-color: #31678e;
   color: #f1f1f1;
 }
 </style>
-<table id="T_10e98">
+<table id="T_5ebfe">
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_10e98_level0_col0" class="col_heading level0 col0" >Accuracy</th>
-      <th id="T_10e98_level0_col1" class="col_heading level0 col1" >ROC AUC</th>
+      <th id="T_5ebfe_level0_col0" class="col_heading level0 col0" >Accuracy</th>
+      <th id="T_5ebfe_level0_col1" class="col_heading level0 col1" >ROC AUC</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_10e98_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_10e98_row0_col0" class="data row0 col0" >0.580000</td>
-      <td id="T_10e98_row0_col1" class="data row0 col1" >0.579710</td>
+      <th id="T_5ebfe_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_5ebfe_row0_col0" class="data row0 col0" >0.580000</td>
+      <td id="T_5ebfe_row0_col1" class="data row0 col1" >0.579710</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_10e98_row1_col0" class="data row1 col0" >0.460000</td>
-      <td id="T_10e98_row1_col1" class="data row1 col1" >0.620994</td>
+      <th id="T_5ebfe_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_5ebfe_row1_col0" class="data row1 col0" >0.460000</td>
+      <td id="T_5ebfe_row1_col1" class="data row1 col1" >0.620994</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_10e98_row2_col0" class="data row2 col0" >0.540000</td>
-      <td id="T_10e98_row2_col1" class="data row2 col1" >0.553600</td>
+      <th id="T_5ebfe_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_5ebfe_row2_col0" class="data row2 col0" >0.540000</td>
+      <td id="T_5ebfe_row2_col1" class="data row2 col1" >0.553600</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_10e98_row3_col0" class="data row3 col0" >0.620000</td>
-      <td id="T_10e98_row3_col1" class="data row3 col1" >0.678400</td>
+      <th id="T_5ebfe_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_5ebfe_row3_col0" class="data row3 col0" >0.620000</td>
+      <td id="T_5ebfe_row3_col1" class="data row3 col1" >0.678400</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_10e98_row4_col0" class="data row4 col0" >0.560000</td>
-      <td id="T_10e98_row4_col1" class="data row4 col1" >0.613527</td>
+      <th id="T_5ebfe_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_5ebfe_row4_col0" class="data row4 col0" >0.560000</td>
+      <td id="T_5ebfe_row4_col1" class="data row4 col1" >0.613527</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row5" class="row_heading level0 row5" >5</th>
-      <td id="T_10e98_row5_col0" class="data row5 col0" >0.640000</td>
-      <td id="T_10e98_row5_col1" class="data row5 col1" >0.765833</td>
+      <th id="T_5ebfe_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_5ebfe_row5_col0" class="data row5 col0" >0.640000</td>
+      <td id="T_5ebfe_row5_col1" class="data row5 col1" >0.765833</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row6" class="row_heading level0 row6" >6</th>
-      <td id="T_10e98_row6_col0" class="data row6 col0" >0.560000</td>
-      <td id="T_10e98_row6_col1" class="data row6 col1" >0.652709</td>
+      <th id="T_5ebfe_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_5ebfe_row6_col0" class="data row6 col0" >0.560000</td>
+      <td id="T_5ebfe_row6_col1" class="data row6 col1" >0.652709</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row7" class="row_heading level0 row7" >7</th>
-      <td id="T_10e98_row7_col0" class="data row7 col0" >0.560000</td>
-      <td id="T_10e98_row7_col1" class="data row7 col1" >0.643317</td>
+      <th id="T_5ebfe_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_5ebfe_row7_col0" class="data row7 col0" >0.560000</td>
+      <td id="T_5ebfe_row7_col1" class="data row7 col1" >0.643317</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row8" class="row_heading level0 row8" >8</th>
-      <td id="T_10e98_row8_col0" class="data row8 col0" >0.660000</td>
-      <td id="T_10e98_row8_col1" class="data row8 col1" >0.734300</td>
+      <th id="T_5ebfe_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_5ebfe_row8_col0" class="data row8 col0" >0.660000</td>
+      <td id="T_5ebfe_row8_col1" class="data row8 col1" >0.734300</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row9" class="row_heading level0 row9" >9</th>
-      <td id="T_10e98_row9_col0" class="data row9 col0" >0.460000</td>
-      <td id="T_10e98_row9_col1" class="data row9 col1" >0.651067</td>
+      <th id="T_5ebfe_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_5ebfe_row9_col0" class="data row9 col0" >0.460000</td>
+      <td id="T_5ebfe_row9_col1" class="data row9 col1" >0.651067</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row10" class="row_heading level0 row10" >10</th>
-      <td id="T_10e98_row10_col0" class="data row10 col0" >0.540000</td>
-      <td id="T_10e98_row10_col1" class="data row10 col1" >0.600000</td>
+      <th id="T_5ebfe_level0_row10" class="row_heading level0 row10" >10</th>
+      <td id="T_5ebfe_row10_col0" class="data row10 col0" >0.540000</td>
+      <td id="T_5ebfe_row10_col1" class="data row10 col1" >0.600000</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row11" class="row_heading level0 row11" >11</th>
-      <td id="T_10e98_row11_col0" class="data row11 col0" >0.640000</td>
-      <td id="T_10e98_row11_col1" class="data row11 col1" >0.728896</td>
+      <th id="T_5ebfe_level0_row11" class="row_heading level0 row11" >11</th>
+      <td id="T_5ebfe_row11_col0" class="data row11 col0" >0.640000</td>
+      <td id="T_5ebfe_row11_col1" class="data row11 col1" >0.728896</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row12" class="row_heading level0 row12" >12</th>
-      <td id="T_10e98_row12_col0" class="data row12 col0" >0.680000</td>
-      <td id="T_10e98_row12_col1" class="data row12 col1" >0.649351</td>
+      <th id="T_5ebfe_level0_row12" class="row_heading level0 row12" >12</th>
+      <td id="T_5ebfe_row12_col0" class="data row12 col0" >0.680000</td>
+      <td id="T_5ebfe_row12_col1" class="data row12 col1" >0.649351</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row13" class="row_heading level0 row13" >13</th>
-      <td id="T_10e98_row13_col0" class="data row13 col0" >0.580000</td>
-      <td id="T_10e98_row13_col1" class="data row13 col1" >0.491790</td>
+      <th id="T_5ebfe_level0_row13" class="row_heading level0 row13" >13</th>
+      <td id="T_5ebfe_row13_col0" class="data row13 col0" >0.580000</td>
+      <td id="T_5ebfe_row13_col1" class="data row13 col1" >0.491790</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row14" class="row_heading level0 row14" >14</th>
-      <td id="T_10e98_row14_col0" class="data row14 col0" >0.600000</td>
-      <td id="T_10e98_row14_col1" class="data row14 col1" >0.696970</td>
+      <th id="T_5ebfe_level0_row14" class="row_heading level0 row14" >14</th>
+      <td id="T_5ebfe_row14_col0" class="data row14 col0" >0.600000</td>
+      <td id="T_5ebfe_row14_col1" class="data row14 col1" >0.696970</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row15" class="row_heading level0 row15" >15</th>
-      <td id="T_10e98_row15_col0" class="data row15 col0" >0.600000</td>
-      <td id="T_10e98_row15_col1" class="data row15 col1" >0.603365</td>
+      <th id="T_5ebfe_level0_row15" class="row_heading level0 row15" >15</th>
+      <td id="T_5ebfe_row15_col0" class="data row15 col0" >0.600000</td>
+      <td id="T_5ebfe_row15_col1" class="data row15 col1" >0.603365</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row16" class="row_heading level0 row16" >16</th>
-      <td id="T_10e98_row16_col0" class="data row16 col0" >0.580000</td>
-      <td id="T_10e98_row16_col1" class="data row16 col1" >0.597403</td>
+      <th id="T_5ebfe_level0_row16" class="row_heading level0 row16" >16</th>
+      <td id="T_5ebfe_row16_col0" class="data row16 col0" >0.580000</td>
+      <td id="T_5ebfe_row16_col1" class="data row16 col1" >0.597403</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row17" class="row_heading level0 row17" >17</th>
-      <td id="T_10e98_row17_col0" class="data row17 col0" >0.560000</td>
-      <td id="T_10e98_row17_col1" class="data row17 col1" >0.706731</td>
+      <th id="T_5ebfe_level0_row17" class="row_heading level0 row17" >17</th>
+      <td id="T_5ebfe_row17_col0" class="data row17 col0" >0.560000</td>
+      <td id="T_5ebfe_row17_col1" class="data row17 col1" >0.706731</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row18" class="row_heading level0 row18" >18</th>
-      <td id="T_10e98_row18_col0" class="data row18 col0" >0.540000</td>
-      <td id="T_10e98_row18_col1" class="data row18 col1" >0.590982</td>
+      <th id="T_5ebfe_level0_row18" class="row_heading level0 row18" >18</th>
+      <td id="T_5ebfe_row18_col0" class="data row18 col0" >0.540000</td>
+      <td id="T_5ebfe_row18_col1" class="data row18 col1" >0.590982</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row19" class="row_heading level0 row19" >19</th>
-      <td id="T_10e98_row19_col0" class="data row19 col0" >0.620000</td>
-      <td id="T_10e98_row19_col1" class="data row19 col1" >0.698686</td>
+      <th id="T_5ebfe_level0_row19" class="row_heading level0 row19" >19</th>
+      <td id="T_5ebfe_row19_col0" class="data row19 col0" >0.620000</td>
+      <td id="T_5ebfe_row19_col1" class="data row19 col1" >0.698686</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row20" class="row_heading level0 row20" >20</th>
-      <td id="T_10e98_row20_col0" class="data row20 col0" >0.600000</td>
-      <td id="T_10e98_row20_col1" class="data row20 col1" >0.660800</td>
+      <th id="T_5ebfe_level0_row20" class="row_heading level0 row20" >20</th>
+      <td id="T_5ebfe_row20_col0" class="data row20 col0" >0.600000</td>
+      <td id="T_5ebfe_row20_col1" class="data row20 col1" >0.660800</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row21" class="row_heading level0 row21" >21</th>
-      <td id="T_10e98_row21_col0" class="data row21 col0" >0.700000</td>
-      <td id="T_10e98_row21_col1" class="data row21 col1" >0.790640</td>
+      <th id="T_5ebfe_level0_row21" class="row_heading level0 row21" >21</th>
+      <td id="T_5ebfe_row21_col0" class="data row21 col0" >0.700000</td>
+      <td id="T_5ebfe_row21_col1" class="data row21 col1" >0.790640</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row22" class="row_heading level0 row22" >22</th>
-      <td id="T_10e98_row22_col0" class="data row22 col0" >0.680000</td>
-      <td id="T_10e98_row22_col1" class="data row22 col1" >0.770032</td>
+      <th id="T_5ebfe_level0_row22" class="row_heading level0 row22" >22</th>
+      <td id="T_5ebfe_row22_col0" class="data row22 col0" >0.680000</td>
+      <td id="T_5ebfe_row22_col1" class="data row22 col1" >0.770032</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row23" class="row_heading level0 row23" >23</th>
-      <td id="T_10e98_row23_col0" class="data row23 col0" >0.600000</td>
-      <td id="T_10e98_row23_col1" class="data row23 col1" >0.788462</td>
+      <th id="T_5ebfe_level0_row23" class="row_heading level0 row23" >23</th>
+      <td id="T_5ebfe_row23_col0" class="data row23 col0" >0.600000</td>
+      <td id="T_5ebfe_row23_col1" class="data row23 col1" >0.788462</td>
     </tr>
     <tr>
-      <th id="T_10e98_level0_row24" class="row_heading level0 row24" >24</th>
-      <td id="T_10e98_row24_col0" class="data row24 col0" >0.480000</td>
-      <td id="T_10e98_row24_col1" class="data row24 col1" >0.328800</td>
+      <th id="T_5ebfe_level0_row24" class="row_heading level0 row24" >24</th>
+      <td id="T_5ebfe_row24_col0" class="data row24 col0" >0.480000</td>
+      <td id="T_5ebfe_row24_col1" class="data row24 col1" >0.328800</td>
     </tr>
   </tbody>
 </table>
@@ -15289,7 +15289,7 @@ Average ROC AUC: 0.6478545892291949
 
     <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
     <span class="n">roc_auc</span> <span class="o">=</span> <span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_prob</span><span class="p">)</span>
-    <span class="n">flat_1u_pnl</span><span class="p">,</span> <span class="n">win_1u_pnl</span><span class="p">,</span> <span class="n">kelly_pnl</span> <span class="o">=</span> <span class="n">profitize</span><span class="p">(</span><span class="n">df_test</span><span class="p">,</span> <span class="n">kelly_scale</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">flat_1u_pnl</span><span class="p">,</span> <span class="n">win_1u_pnl</span><span class="p">,</span> <span class="n">kelly_pnl</span> <span class="o">=</span> <span class="n">profitize</span><span class="p">(</span><span class="n">df_test</span><span class="p">,</span> <span class="n">kelly_scale</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 
     <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
         <span class="s1">'C'</span><span class="p">:</span> <span class="n">logr</span><span class="o">.</span><span class="n">C_</span><span class="p">,</span>
@@ -15354,7 +15354,7 @@ Average ROC AUC: 0.6478545892291949
 Average ROC AUC: 0.6459448800634778
 Flat 1u PNL: 63.31012164469311
 Win 1u PNL: 70.8473185263898
-Kelly PNL: 20.06039080559668
+Kelly PNL: 3.8730015596244884
 </pre>
 </div>
 </div>
@@ -15368,424 +15368,440 @@ Kelly PNL: 20.06039080559668
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
 <style type="text/css">
-#T_575e8_row0_col1, #T_575e8_row7_col1 {
+#T_52f20_row0_col1, #T_52f20_row7_col1 {
   background-color: #1f9f88;
   color: #f1f1f1;
 }
-#T_575e8_row0_col2 {
+#T_52f20_row0_col2 {
   background-color: #1fa187;
   color: #f1f1f1;
 }
-#T_575e8_row0_col3, #T_575e8_row0_col4, #T_575e8_row1_col3, #T_575e8_row1_col4, #T_575e8_row1_col5, #T_575e8_row2_col3, #T_575e8_row2_col4, #T_575e8_row2_col5, #T_575e8_row4_col3, #T_575e8_row4_col4, #T_575e8_row4_col5, #T_575e8_row5_col4, #T_575e8_row7_col3, #T_575e8_row7_col4, #T_575e8_row7_col5, #T_575e8_row9_col3, #T_575e8_row9_col4, #T_575e8_row9_col5, #T_575e8_row11_col3, #T_575e8_row11_col4, #T_575e8_row11_col5, #T_575e8_row13_col3, #T_575e8_row13_col4, #T_575e8_row14_col3, #T_575e8_row14_col4, #T_575e8_row14_col5, #T_575e8_row15_col3, #T_575e8_row16_col3, #T_575e8_row16_col4, #T_575e8_row16_col5, #T_575e8_row17_col4, #T_575e8_row18_col3, #T_575e8_row18_col4, #T_575e8_row18_col5, #T_575e8_row19_col3, #T_575e8_row19_col4, #T_575e8_row19_col5, #T_575e8_row22_col4, #T_575e8_row22_col5, #T_575e8_row23_col4, #T_575e8_row24_col3, #T_575e8_row24_col4, #T_575e8_row24_col5 {
+#T_52f20_row0_col3, #T_52f20_row0_col4, #T_52f20_row1_col3, #T_52f20_row1_col4, #T_52f20_row2_col3, #T_52f20_row2_col4, #T_52f20_row4_col3, #T_52f20_row4_col4, #T_52f20_row5_col4, #T_52f20_row7_col3, #T_52f20_row7_col4, #T_52f20_row9_col3, #T_52f20_row9_col4, #T_52f20_row11_col3, #T_52f20_row11_col4, #T_52f20_row13_col3, #T_52f20_row13_col4, #T_52f20_row14_col3, #T_52f20_row14_col4, #T_52f20_row14_col5, #T_52f20_row15_col3, #T_52f20_row16_col3, #T_52f20_row16_col4, #T_52f20_row16_col5, #T_52f20_row17_col4, #T_52f20_row18_col3, #T_52f20_row18_col4, #T_52f20_row18_col5, #T_52f20_row19_col3, #T_52f20_row19_col4, #T_52f20_row22_col4, #T_52f20_row23_col4, #T_52f20_row24_col3, #T_52f20_row24_col4 {
   background-color: #fde725;
   color: #000000;
 }
-#T_575e8_row0_col5 {
-  background-color: #8bd646;
-  color: #000000;
+#T_52f20_row0_col5 {
+  background-color: #228d8d;
+  color: #f1f1f1;
 }
-#T_575e8_row1_col1 {
+#T_52f20_row1_col1 {
   background-color: #21918c;
   color: #f1f1f1;
 }
-#T_575e8_row1_col2, #T_575e8_row12_col2 {
+#T_52f20_row1_col2, #T_52f20_row12_col2 {
   background-color: #24aa83;
   color: #f1f1f1;
 }
-#T_575e8_row2_col1 {
-  background-color: #24868e;
-  color: #f1f1f1;
-}
-#T_575e8_row2_col2 {
-  background-color: #1f978b;
-  color: #f1f1f1;
-}
-#T_575e8_row3_col1, #T_575e8_row4_col1, #T_575e8_row9_col1, #T_575e8_row15_col1, #T_575e8_row18_col1 {
-  background-color: #20a386;
-  color: #f1f1f1;
-}
-#T_575e8_row3_col2 {
-  background-color: #3aba76;
-  color: #f1f1f1;
-}
-#T_575e8_row3_col3, #T_575e8_row3_col4, #T_575e8_row3_col5, #T_575e8_row6_col3, #T_575e8_row6_col4, #T_575e8_row6_col5, #T_575e8_row8_col3, #T_575e8_row8_col4, #T_575e8_row8_col5, #T_575e8_row12_col3, #T_575e8_row12_col4, #T_575e8_row12_col5, #T_575e8_row15_col4, #T_575e8_row17_col3, #T_575e8_row20_col3, #T_575e8_row20_col4, #T_575e8_row20_col5, #T_575e8_row21_col3, #T_575e8_row21_col4, #T_575e8_row21_col5, #T_575e8_row23_col3 {
+#T_52f20_row1_col5, #T_52f20_row3_col3, #T_52f20_row3_col4, #T_52f20_row3_col5, #T_52f20_row5_col5, #T_52f20_row6_col3, #T_52f20_row6_col4, #T_52f20_row6_col5, #T_52f20_row8_col3, #T_52f20_row8_col4, #T_52f20_row8_col5, #T_52f20_row12_col3, #T_52f20_row12_col4, #T_52f20_row12_col5, #T_52f20_row15_col4, #T_52f20_row17_col3, #T_52f20_row17_col5, #T_52f20_row20_col3, #T_52f20_row20_col4, #T_52f20_row20_col5, #T_52f20_row21_col3, #T_52f20_row21_col4, #T_52f20_row21_col5, #T_52f20_row22_col5, #T_52f20_row23_col3, #T_52f20_row23_col5 {
   background-color: #440154;
   color: #f1f1f1;
 }
-#T_575e8_row4_col2 {
+#T_52f20_row2_col1 {
+  background-color: #24868e;
+  color: #f1f1f1;
+}
+#T_52f20_row2_col2 {
+  background-color: #1f978b;
+  color: #f1f1f1;
+}
+#T_52f20_row2_col5 {
+  background-color: #cae11f;
+  color: #000000;
+}
+#T_52f20_row3_col1, #T_52f20_row4_col1, #T_52f20_row9_col1, #T_52f20_row15_col1, #T_52f20_row18_col1 {
+  background-color: #20a386;
+  color: #f1f1f1;
+}
+#T_52f20_row3_col2 {
+  background-color: #3aba76;
+  color: #f1f1f1;
+}
+#T_52f20_row4_col2 {
   background-color: #21a585;
   color: #f1f1f1;
 }
-#T_575e8_row5_col1, #T_575e8_row5_col5, #T_575e8_row11_col1 {
+#T_52f20_row4_col5 {
+  background-color: #277e8e;
+  color: #f1f1f1;
+}
+#T_52f20_row5_col1, #T_52f20_row11_col1 {
   background-color: #3bbb75;
   color: #f1f1f1;
 }
-#T_575e8_row5_col2 {
+#T_52f20_row5_col2 {
   background-color: #5ac864;
   color: #000000;
 }
-#T_575e8_row5_col3 {
+#T_52f20_row5_col3 {
   background-color: #30698e;
   color: #f1f1f1;
 }
-#T_575e8_row6_col1, #T_575e8_row8_col1 {
+#T_52f20_row6_col1, #T_52f20_row8_col1 {
   background-color: #32b67a;
   color: #f1f1f1;
 }
-#T_575e8_row6_col2, #T_575e8_row20_col2 {
+#T_52f20_row6_col2, #T_52f20_row20_col2 {
   background-color: #35b779;
   color: #f1f1f1;
 }
-#T_575e8_row7_col2 {
+#T_52f20_row7_col2 {
   background-color: #29af7f;
   color: #f1f1f1;
 }
-#T_575e8_row8_col2 {
+#T_52f20_row7_col5 {
+  background-color: #21a685;
+  color: #f1f1f1;
+}
+#T_52f20_row8_col2 {
   background-color: #65cb5e;
   color: #000000;
 }
-#T_575e8_row9_col2 {
+#T_52f20_row9_col2 {
   background-color: #31b57b;
   color: #f1f1f1;
 }
-#T_575e8_row10_col1, #T_575e8_row13_col1 {
+#T_52f20_row9_col5 {
+  background-color: #20a486;
+  color: #f1f1f1;
+}
+#T_52f20_row10_col1, #T_52f20_row13_col1 {
   background-color: #1f9a8a;
   color: #f1f1f1;
 }
-#T_575e8_row10_col2 {
+#T_52f20_row10_col2 {
   background-color: #22a785;
   color: #f1f1f1;
 }
-#T_575e8_row10_col3 {
+#T_52f20_row10_col3 {
   background-color: #39558c;
   color: #f1f1f1;
 }
-#T_575e8_row10_col4 {
+#T_52f20_row10_col4 {
   background-color: #453581;
   color: #f1f1f1;
 }
-#T_575e8_row10_col5 {
-  background-color: #481a6c;
+#T_52f20_row10_col5 {
+  background-color: #48186a;
   color: #f1f1f1;
 }
-#T_575e8_row11_col2 {
+#T_52f20_row11_col2 {
   background-color: #52c569;
   color: #000000;
 }
-#T_575e8_row12_col1, #T_575e8_row16_col1, #T_575e8_row16_col2, #T_575e8_row20_col1 {
+#T_52f20_row11_col5 {
+  background-color: #450457;
+  color: #f1f1f1;
+}
+#T_52f20_row12_col1, #T_52f20_row16_col1, #T_52f20_row16_col2, #T_52f20_row20_col1 {
   background-color: #22a884;
   color: #f1f1f1;
 }
-#T_575e8_row13_col2 {
+#T_52f20_row13_col2 {
   background-color: #20938c;
   color: #f1f1f1;
 }
-#T_575e8_row13_col5 {
-  background-color: #287c8e;
+#T_52f20_row13_col5 {
+  background-color: #2d708e;
   color: #f1f1f1;
 }
-#T_575e8_row14_col1, #T_575e8_row17_col1, #T_575e8_row19_col1 {
+#T_52f20_row14_col1, #T_52f20_row17_col1, #T_52f20_row19_col1 {
   background-color: #26ad81;
   color: #f1f1f1;
 }
-#T_575e8_row14_col2 {
+#T_52f20_row14_col2 {
   background-color: #28ae80;
   color: #f1f1f1;
 }
-#T_575e8_row15_col2 {
+#T_52f20_row15_col2, #T_52f20_row19_col5 {
   background-color: #23a983;
   color: #f1f1f1;
 }
-#T_575e8_row15_col5 {
-  background-color: #355f8d;
+#T_52f20_row15_col5 {
+  background-color: #218e8d;
   color: #f1f1f1;
 }
-#T_575e8_row17_col2 {
+#T_52f20_row17_col2 {
   background-color: #4ac16d;
   color: #000000;
 }
-#T_575e8_row17_col5 {
-  background-color: #34608d;
-  color: #f1f1f1;
-}
-#T_575e8_row18_col2 {
+#T_52f20_row18_col2 {
   background-color: #2fb47c;
   color: #f1f1f1;
 }
-#T_575e8_row19_col2, #T_575e8_row22_col1, #T_575e8_row23_col1 {
+#T_52f20_row19_col2, #T_52f20_row22_col1, #T_52f20_row23_col1 {
   background-color: #4ec36b;
   color: #000000;
 }
-#T_575e8_row21_col1 {
+#T_52f20_row21_col1 {
   background-color: #63cb5f;
   color: #000000;
 }
-#T_575e8_row21_col2 {
+#T_52f20_row21_col2 {
   background-color: #70cf57;
   color: #000000;
 }
-#T_575e8_row22_col2 {
+#T_52f20_row22_col2 {
   background-color: #7ad151;
   color: #000000;
 }
-#T_575e8_row22_col3 {
+#T_52f20_row22_col3 {
   background-color: #46085c;
   color: #f1f1f1;
 }
-#T_575e8_row23_col2 {
+#T_52f20_row23_col2 {
   background-color: #6ccd5a;
   color: #000000;
 }
-#T_575e8_row23_col5 {
-  background-color: #dfe318;
-  color: #000000;
-}
-#T_575e8_row24_col1 {
+#T_52f20_row24_col1 {
   background-color: #287d8e;
   color: #f1f1f1;
 }
-#T_575e8_row24_col2 {
+#T_52f20_row24_col2 {
   background-color: #32658e;
   color: #f1f1f1;
 }
+#T_52f20_row24_col5 {
+  background-color: #2f6b8e;
+  color: #f1f1f1;
+}
 </style>
-<table id="T_575e8">
+<table id="T_52f20">
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_575e8_level0_col0" class="col_heading level0 col0" >C</th>
-      <th id="T_575e8_level0_col1" class="col_heading level0 col1" >Accuracy</th>
-      <th id="T_575e8_level0_col2" class="col_heading level0 col2" >ROC AUC</th>
-      <th id="T_575e8_level0_col3" class="col_heading level0 col3" >Flat 1u PNL</th>
-      <th id="T_575e8_level0_col4" class="col_heading level0 col4" >Win 1u PNL</th>
-      <th id="T_575e8_level0_col5" class="col_heading level0 col5" >Kelly PNL</th>
+      <th id="T_52f20_level0_col0" class="col_heading level0 col0" >C</th>
+      <th id="T_52f20_level0_col1" class="col_heading level0 col1" >Accuracy</th>
+      <th id="T_52f20_level0_col2" class="col_heading level0 col2" >ROC AUC</th>
+      <th id="T_52f20_level0_col3" class="col_heading level0 col3" >Flat 1u PNL</th>
+      <th id="T_52f20_level0_col4" class="col_heading level0 col4" >Win 1u PNL</th>
+      <th id="T_52f20_level0_col5" class="col_heading level0 col5" >Kelly PNL</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_575e8_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_575e8_row0_col0" class="data row0 col0" >[0.00077426]</td>
-      <td id="T_575e8_row0_col1" class="data row0 col1" >0.560000</td>
-      <td id="T_575e8_row0_col2" class="data row0 col2" >0.571659</td>
-      <td id="T_575e8_row0_col3" class="data row0 col3" >3.179971</td>
-      <td id="T_575e8_row0_col4" class="data row0 col4" >1.727962</td>
-      <td id="T_575e8_row0_col5" class="data row0 col5" >0.825447</td>
+      <th id="T_52f20_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_52f20_row0_col0" class="data row0 col0" >[0.00077426]</td>
+      <td id="T_52f20_row0_col1" class="data row0 col1" >0.560000</td>
+      <td id="T_52f20_row0_col2" class="data row0 col2" >0.571659</td>
+      <td id="T_52f20_row0_col3" class="data row0 col3" >3.179971</td>
+      <td id="T_52f20_row0_col4" class="data row0 col4" >1.727962</td>
+      <td id="T_52f20_row0_col5" class="data row0 col5" >0.485448</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_575e8_row1_col0" class="data row1 col0" >[0.0001]</td>
-      <td id="T_575e8_row1_col1" class="data row1 col1" >0.500000</td>
-      <td id="T_575e8_row1_col2" class="data row1 col2" >0.607372</td>
-      <td id="T_575e8_row1_col3" class="data row1 col3" >8.410000</td>
-      <td id="T_575e8_row1_col4" class="data row1 col4" >8.416261</td>
-      <td id="T_575e8_row1_col5" class="data row1 col5" >1.998805</td>
+      <th id="T_52f20_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_52f20_row1_col0" class="data row1 col0" >[0.0001]</td>
+      <td id="T_52f20_row1_col1" class="data row1 col1" >0.500000</td>
+      <td id="T_52f20_row1_col2" class="data row1 col2" >0.607372</td>
+      <td id="T_52f20_row1_col3" class="data row1 col3" >8.410000</td>
+      <td id="T_52f20_row1_col4" class="data row1 col4" >8.416261</td>
+      <td id="T_52f20_row1_col5" class="data row1 col5" >-0.106002</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_575e8_row2_col0" class="data row2 col0" >[0.0001]</td>
-      <td id="T_575e8_row2_col1" class="data row2 col1" >0.460000</td>
-      <td id="T_575e8_row2_col2" class="data row2 col2" >0.528000</td>
-      <td id="T_575e8_row2_col3" class="data row2 col3" >6.550000</td>
-      <td id="T_575e8_row2_col4" class="data row2 col4" >4.687297</td>
-      <td id="T_575e8_row2_col5" class="data row2 col5" >1.932735</td>
+      <th id="T_52f20_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_52f20_row2_col0" class="data row2 col0" >[0.0001]</td>
+      <td id="T_52f20_row2_col1" class="data row2 col1" >0.460000</td>
+      <td id="T_52f20_row2_col2" class="data row2 col2" >0.528000</td>
+      <td id="T_52f20_row2_col3" class="data row2 col3" >6.550000</td>
+      <td id="T_52f20_row2_col4" class="data row2 col4" >4.687297</td>
+      <td id="T_52f20_row2_col5" class="data row2 col5" >0.918539</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_575e8_row3_col0" class="data row3 col0" >[0.0001]</td>
-      <td id="T_575e8_row3_col1" class="data row3 col1" >0.580000</td>
-      <td id="T_575e8_row3_col2" class="data row3 col2" >0.678400</td>
-      <td id="T_575e8_row3_col3" class="data row3 col3" >-4.380000</td>
-      <td id="T_575e8_row3_col4" class="data row3 col4" >-1.864863</td>
-      <td id="T_575e8_row3_col5" class="data row3 col5" >-1.348194</td>
+      <th id="T_52f20_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_52f20_row3_col0" class="data row3 col0" >[0.0001]</td>
+      <td id="T_52f20_row3_col1" class="data row3 col1" >0.580000</td>
+      <td id="T_52f20_row3_col2" class="data row3 col2" >0.678400</td>
+      <td id="T_52f20_row3_col3" class="data row3 col3" >-4.380000</td>
+      <td id="T_52f20_row3_col4" class="data row3 col4" >-1.864863</td>
+      <td id="T_52f20_row3_col5" class="data row3 col5" >-1.020600</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_575e8_row4_col0" class="data row4 col0" >[0.00599484]</td>
-      <td id="T_575e8_row4_col1" class="data row4 col1" >0.580000</td>
-      <td id="T_575e8_row4_col2" class="data row4 col2" >0.587762</td>
-      <td id="T_575e8_row4_col3" class="data row4 col3" >9.110084</td>
-      <td id="T_575e8_row4_col4" class="data row4 col4" >6.294694</td>
-      <td id="T_575e8_row4_col5" class="data row4 col5" >1.816271</td>
+      <th id="T_52f20_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_52f20_row4_col0" class="data row4 col0" >[0.00599484]</td>
+      <td id="T_52f20_row4_col1" class="data row4 col1" >0.580000</td>
+      <td id="T_52f20_row4_col2" class="data row4 col2" >0.587762</td>
+      <td id="T_52f20_row4_col3" class="data row4 col3" >9.110084</td>
+      <td id="T_52f20_row4_col4" class="data row4 col4" >6.294694</td>
+      <td id="T_52f20_row4_col5" class="data row4 col5" >0.424196</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row5" class="row_heading level0 row5" >5</th>
-      <td id="T_575e8_row5_col0" class="data row5 col0" >[0.00077426]</td>
-      <td id="T_575e8_row5_col1" class="data row5 col1" >0.680000</td>
-      <td id="T_575e8_row5_col2" class="data row5 col2" >0.745000</td>
-      <td id="T_575e8_row5_col3" class="data row5 col3" >0.339476</td>
-      <td id="T_575e8_row5_col4" class="data row5 col4" >3.111434</td>
-      <td id="T_575e8_row5_col5" class="data row5 col5" >0.682678</td>
+      <th id="T_52f20_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_52f20_row5_col0" class="data row5 col0" >[0.00077426]</td>
+      <td id="T_52f20_row5_col1" class="data row5 col1" >0.680000</td>
+      <td id="T_52f20_row5_col2" class="data row5 col2" >0.745000</td>
+      <td id="T_52f20_row5_col3" class="data row5 col3" >0.339476</td>
+      <td id="T_52f20_row5_col4" class="data row5 col4" >3.111434</td>
+      <td id="T_52f20_row5_col5" class="data row5 col5" >-0.132278</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row6" class="row_heading level0 row6" >6</th>
-      <td id="T_575e8_row6_col0" class="data row6 col0" >[0.0001]</td>
-      <td id="T_575e8_row6_col1" class="data row6 col1" >0.660000</td>
-      <td id="T_575e8_row6_col2" class="data row6 col2" >0.666667</td>
-      <td id="T_575e8_row6_col3" class="data row6 col3" >-1.897619</td>
-      <td id="T_575e8_row6_col4" class="data row6 col4" >-1.908672</td>
-      <td id="T_575e8_row6_col5" class="data row6 col5" >-0.698671</td>
+      <th id="T_52f20_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_52f20_row6_col0" class="data row6 col0" >[0.0001]</td>
+      <td id="T_52f20_row6_col1" class="data row6 col1" >0.660000</td>
+      <td id="T_52f20_row6_col2" class="data row6 col2" >0.666667</td>
+      <td id="T_52f20_row6_col3" class="data row6 col3" >-1.897619</td>
+      <td id="T_52f20_row6_col4" class="data row6 col4" >-1.908672</td>
+      <td id="T_52f20_row6_col5" class="data row6 col5" >-0.240251</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row7" class="row_heading level0 row7" >7</th>
-      <td id="T_575e8_row7_col0" class="data row7 col0" >[0.00077426]</td>
-      <td id="T_575e8_row7_col1" class="data row7 col1" >0.560000</td>
-      <td id="T_575e8_row7_col2" class="data row7 col2" >0.631240</td>
-      <td id="T_575e8_row7_col3" class="data row7 col3" >7.754195</td>
-      <td id="T_575e8_row7_col4" class="data row7 col4" >5.508981</td>
-      <td id="T_575e8_row7_col5" class="data row7 col5" >1.838118</td>
+      <th id="T_52f20_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_52f20_row7_col0" class="data row7 col0" >[0.00077426]</td>
+      <td id="T_52f20_row7_col1" class="data row7 col1" >0.560000</td>
+      <td id="T_52f20_row7_col2" class="data row7 col2" >0.631240</td>
+      <td id="T_52f20_row7_col3" class="data row7 col3" >7.754195</td>
+      <td id="T_52f20_row7_col4" class="data row7 col4" >5.508981</td>
+      <td id="T_52f20_row7_col5" class="data row7 col5" >0.590760</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row8" class="row_heading level0 row8" >8</th>
-      <td id="T_575e8_row8_col0" class="data row8 col0" >[0.00077426]</td>
-      <td id="T_575e8_row8_col1" class="data row8 col1" >0.660000</td>
-      <td id="T_575e8_row8_col2" class="data row8 col2" >0.764895</td>
-      <td id="T_575e8_row8_col3" class="data row8 col3" >-7.397860</td>
-      <td id="T_575e8_row8_col4" class="data row8 col4" >-4.732032</td>
-      <td id="T_575e8_row8_col5" class="data row8 col5" >-1.713640</td>
+      <th id="T_52f20_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_52f20_row8_col0" class="data row8 col0" >[0.00077426]</td>
+      <td id="T_52f20_row8_col1" class="data row8 col1" >0.660000</td>
+      <td id="T_52f20_row8_col2" class="data row8 col2" >0.764895</td>
+      <td id="T_52f20_row8_col3" class="data row8 col3" >-7.397860</td>
+      <td id="T_52f20_row8_col4" class="data row8 col4" >-4.732032</td>
+      <td id="T_52f20_row8_col5" class="data row8 col5" >-0.691567</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row9" class="row_heading level0 row9" >9</th>
-      <td id="T_575e8_row9_col0" class="data row9 col0" >[0.0001]</td>
-      <td id="T_575e8_row9_col1" class="data row9 col1" >0.580000</td>
-      <td id="T_575e8_row9_col2" class="data row9 col2" >0.655172</td>
-      <td id="T_575e8_row9_col3" class="data row9 col3" >4.939091</td>
-      <td id="T_575e8_row9_col4" class="data row9 col4" >3.742878</td>
-      <td id="T_575e8_row9_col5" class="data row9 col5" >1.392340</td>
+      <th id="T_52f20_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_52f20_row9_col0" class="data row9 col0" >[0.0001]</td>
+      <td id="T_52f20_row9_col1" class="data row9 col1" >0.580000</td>
+      <td id="T_52f20_row9_col2" class="data row9 col2" >0.655172</td>
+      <td id="T_52f20_row9_col3" class="data row9 col3" >4.939091</td>
+      <td id="T_52f20_row9_col4" class="data row9 col4" >3.742878</td>
+      <td id="T_52f20_row9_col5" class="data row9 col5" >0.584729</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row10" class="row_heading level0 row10" >10</th>
-      <td id="T_575e8_row10_col0" class="data row10 col0" >[0.0001]</td>
-      <td id="T_575e8_row10_col1" class="data row10 col1" >0.540000</td>
-      <td id="T_575e8_row10_col2" class="data row10 col2" >0.595200</td>
-      <td id="T_575e8_row10_col3" class="data row10 col3" >0.262381</td>
-      <td id="T_575e8_row10_col4" class="data row10 col4" >0.155511</td>
-      <td id="T_575e8_row10_col5" class="data row10 col5" >0.068563</td>
+      <th id="T_52f20_level0_row10" class="row_heading level0 row10" >10</th>
+      <td id="T_52f20_row10_col0" class="data row10 col0" >[0.0001]</td>
+      <td id="T_52f20_row10_col1" class="data row10 col1" >0.540000</td>
+      <td id="T_52f20_row10_col2" class="data row10 col2" >0.595200</td>
+      <td id="T_52f20_row10_col3" class="data row10 col3" >0.262381</td>
+      <td id="T_52f20_row10_col4" class="data row10 col4" >0.155511</td>
+      <td id="T_52f20_row10_col5" class="data row10 col5" >0.064146</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row11" class="row_heading level0 row11" >11</th>
-      <td id="T_575e8_row11_col0" class="data row11 col0" >[0.00077426]</td>
-      <td id="T_575e8_row11_col1" class="data row11 col1" >0.680000</td>
-      <td id="T_575e8_row11_col2" class="data row11 col2" >0.728896</td>
-      <td id="T_575e8_row11_col3" class="data row11 col3" >2.237104</td>
-      <td id="T_575e8_row11_col4" class="data row11 col4" >5.560010</td>
-      <td id="T_575e8_row11_col5" class="data row11 col5" >1.294972</td>
+      <th id="T_52f20_level0_row11" class="row_heading level0 row11" >11</th>
+      <td id="T_52f20_row11_col0" class="data row11 col0" >[0.00077426]</td>
+      <td id="T_52f20_row11_col1" class="data row11 col1" >0.680000</td>
+      <td id="T_52f20_row11_col2" class="data row11 col2" >0.728896</td>
+      <td id="T_52f20_row11_col3" class="data row11 col3" >2.237104</td>
+      <td id="T_52f20_row11_col4" class="data row11 col4" >5.560010</td>
+      <td id="T_52f20_row11_col5" class="data row11 col5" >0.010566</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row12" class="row_heading level0 row12" >12</th>
-      <td id="T_575e8_row12_col0" class="data row12 col0" >[0.04641589]</td>
-      <td id="T_575e8_row12_col1" class="data row12 col1" >0.600000</td>
-      <td id="T_575e8_row12_col2" class="data row12 col2" >0.608766</td>
-      <td id="T_575e8_row12_col3" class="data row12 col3" >-3.787923</td>
-      <td id="T_575e8_row12_col4" class="data row12 col4" >-0.934046</td>
-      <td id="T_575e8_row12_col5" class="data row12 col5" >-1.156780</td>
+      <th id="T_52f20_level0_row12" class="row_heading level0 row12" >12</th>
+      <td id="T_52f20_row12_col0" class="data row12 col0" >[0.04641589]</td>
+      <td id="T_52f20_row12_col1" class="data row12 col1" >0.600000</td>
+      <td id="T_52f20_row12_col2" class="data row12 col2" >0.608766</td>
+      <td id="T_52f20_row12_col3" class="data row12 col3" >-3.787923</td>
+      <td id="T_52f20_row12_col4" class="data row12 col4" >-0.934046</td>
+      <td id="T_52f20_row12_col5" class="data row12 col5" >-1.283341</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row13" class="row_heading level0 row13" >13</th>
-      <td id="T_575e8_row13_col0" class="data row13 col0" >[0.00599484]</td>
-      <td id="T_575e8_row13_col1" class="data row13 col1" >0.540000</td>
-      <td id="T_575e8_row13_col2" class="data row13 col2" >0.512315</td>
-      <td id="T_575e8_row13_col3" class="data row13 col3" >5.407887</td>
-      <td id="T_575e8_row13_col4" class="data row13 col4" >1.059649</td>
-      <td id="T_575e8_row13_col5" class="data row13 col5" >0.415893</td>
+      <th id="T_52f20_level0_row13" class="row_heading level0 row13" >13</th>
+      <td id="T_52f20_row13_col0" class="data row13 col0" >[0.00599484]</td>
+      <td id="T_52f20_row13_col1" class="data row13 col1" >0.540000</td>
+      <td id="T_52f20_row13_col2" class="data row13 col2" >0.512315</td>
+      <td id="T_52f20_row13_col3" class="data row13 col3" >5.407887</td>
+      <td id="T_52f20_row13_col4" class="data row13 col4" >1.059649</td>
+      <td id="T_52f20_row13_col5" class="data row13 col5" >0.366556</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row14" class="row_heading level0 row14" >14</th>
-      <td id="T_575e8_row14_col0" class="data row14 col0" >[0.00599484]</td>
-      <td id="T_575e8_row14_col1" class="data row14 col1" >0.620000</td>
-      <td id="T_575e8_row14_col2" class="data row14 col2" >0.625668</td>
-      <td id="T_575e8_row14_col3" class="data row14 col3" >9.004708</td>
-      <td id="T_575e8_row14_col4" class="data row14 col4" >9.554287</td>
-      <td id="T_575e8_row14_col5" class="data row14 col5" >2.976067</td>
+      <th id="T_52f20_level0_row14" class="row_heading level0 row14" >14</th>
+      <td id="T_52f20_row14_col0" class="data row14 col0" >[0.00599484]</td>
+      <td id="T_52f20_row14_col1" class="data row14 col1" >0.620000</td>
+      <td id="T_52f20_row14_col2" class="data row14 col2" >0.625668</td>
+      <td id="T_52f20_row14_col3" class="data row14 col3" >9.004708</td>
+      <td id="T_52f20_row14_col4" class="data row14 col4" >9.554287</td>
+      <td id="T_52f20_row14_col5" class="data row14 col5" >1.074005</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row15" class="row_heading level0 row15" >15</th>
-      <td id="T_575e8_row15_col0" class="data row15 col0" >[0.00077426]</td>
-      <td id="T_575e8_row15_col1" class="data row15 col1" >0.580000</td>
-      <td id="T_575e8_row15_col2" class="data row15 col2" >0.604167</td>
-      <td id="T_575e8_row15_col3" class="data row15 col3" >3.047963</td>
-      <td id="T_575e8_row15_col4" class="data row15 col4" >-0.515959</td>
-      <td id="T_575e8_row15_col5" class="data row15 col5" >0.298963</td>
+      <th id="T_52f20_level0_row15" class="row_heading level0 row15" >15</th>
+      <td id="T_52f20_row15_col0" class="data row15 col0" >[0.00077426]</td>
+      <td id="T_52f20_row15_col1" class="data row15 col1" >0.580000</td>
+      <td id="T_52f20_row15_col2" class="data row15 col2" >0.604167</td>
+      <td id="T_52f20_row15_col3" class="data row15 col3" >3.047963</td>
+      <td id="T_52f20_row15_col4" class="data row15 col4" >-0.515959</td>
+      <td id="T_52f20_row15_col5" class="data row15 col5" >0.488644</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row16" class="row_heading level0 row16" >16</th>
-      <td id="T_575e8_row16_col0" class="data row16 col0" >[0.00077426]</td>
-      <td id="T_575e8_row16_col1" class="data row16 col1" >0.600000</td>
-      <td id="T_575e8_row16_col2" class="data row16 col2" >0.599026</td>
-      <td id="T_575e8_row16_col3" class="data row16 col3" >11.010140</td>
-      <td id="T_575e8_row16_col4" class="data row16 col4" >7.040508</td>
-      <td id="T_575e8_row16_col5" class="data row16 col5" >2.460569</td>
+      <th id="T_52f20_level0_row16" class="row_heading level0 row16" >16</th>
+      <td id="T_52f20_row16_col0" class="data row16 col0" >[0.00077426]</td>
+      <td id="T_52f20_row16_col1" class="data row16 col1" >0.600000</td>
+      <td id="T_52f20_row16_col2" class="data row16 col2" >0.599026</td>
+      <td id="T_52f20_row16_col3" class="data row16 col3" >11.010140</td>
+      <td id="T_52f20_row16_col4" class="data row16 col4" >7.040508</td>
+      <td id="T_52f20_row16_col5" class="data row16 col5" >1.030780</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row17" class="row_heading level0 row17" >17</th>
-      <td id="T_575e8_row17_col0" class="data row17 col0" >[0.00077426]</td>
-      <td id="T_575e8_row17_col1" class="data row17 col1" >0.620000</td>
-      <td id="T_575e8_row17_col2" class="data row17 col2" >0.714744</td>
-      <td id="T_575e8_row17_col3" class="data row17 col3" >-2.129691</td>
-      <td id="T_575e8_row17_col4" class="data row17 col4" >2.967900</td>
-      <td id="T_575e8_row17_col5" class="data row17 col5" >0.303268</td>
+      <th id="T_52f20_level0_row17" class="row_heading level0 row17" >17</th>
+      <td id="T_52f20_row17_col0" class="data row17 col0" >[0.00077426]</td>
+      <td id="T_52f20_row17_col1" class="data row17 col1" >0.620000</td>
+      <td id="T_52f20_row17_col2" class="data row17 col2" >0.714744</td>
+      <td id="T_52f20_row17_col3" class="data row17 col3" >-2.129691</td>
+      <td id="T_52f20_row17_col4" class="data row17 col4" >2.967900</td>
+      <td id="T_52f20_row17_col5" class="data row17 col5" >-0.592326</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row18" class="row_heading level0 row18" >18</th>
-      <td id="T_575e8_row18_col0" class="data row18 col0" >[0.00599484]</td>
-      <td id="T_575e8_row18_col1" class="data row18 col1" >0.580000</td>
-      <td id="T_575e8_row18_col2" class="data row18 col2" >0.650564</td>
-      <td id="T_575e8_row18_col3" class="data row18 col3" >12.687147</td>
-      <td id="T_575e8_row18_col4" class="data row18 col4" >8.900983</td>
-      <td id="T_575e8_row18_col5" class="data row18 col5" >4.069783</td>
+      <th id="T_52f20_level0_row18" class="row_heading level0 row18" >18</th>
+      <td id="T_52f20_row18_col0" class="data row18 col0" >[0.00599484]</td>
+      <td id="T_52f20_row18_col1" class="data row18 col1" >0.580000</td>
+      <td id="T_52f20_row18_col2" class="data row18 col2" >0.650564</td>
+      <td id="T_52f20_row18_col3" class="data row18 col3" >12.687147</td>
+      <td id="T_52f20_row18_col4" class="data row18 col4" >8.900983</td>
+      <td id="T_52f20_row18_col5" class="data row18 col5" >1.927123</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row19" class="row_heading level0 row19" >19</th>
-      <td id="T_575e8_row19_col0" class="data row19 col0" >[0.00077426]</td>
-      <td id="T_575e8_row19_col1" class="data row19 col1" >0.620000</td>
-      <td id="T_575e8_row19_col2" class="data row19 col2" >0.722496</td>
-      <td id="T_575e8_row19_col3" class="data row19 col3" >6.014087</td>
-      <td id="T_575e8_row19_col4" class="data row19 col4" >7.815041</td>
-      <td id="T_575e8_row19_col5" class="data row19 col5" >2.294935</td>
+      <th id="T_52f20_level0_row19" class="row_heading level0 row19" >19</th>
+      <td id="T_52f20_row19_col0" class="data row19 col0" >[0.00077426]</td>
+      <td id="T_52f20_row19_col1" class="data row19 col1" >0.620000</td>
+      <td id="T_52f20_row19_col2" class="data row19 col2" >0.722496</td>
+      <td id="T_52f20_row19_col3" class="data row19 col3" >6.014087</td>
+      <td id="T_52f20_row19_col4" class="data row19 col4" >7.815041</td>
+      <td id="T_52f20_row19_col5" class="data row19 col5" >0.604699</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row20" class="row_heading level0 row20" >20</th>
-      <td id="T_575e8_row20_col0" class="data row20 col0" >[0.00077426]</td>
-      <td id="T_575e8_row20_col1" class="data row20 col1" >0.600000</td>
-      <td id="T_575e8_row20_col2" class="data row20 col2" >0.667200</td>
-      <td id="T_575e8_row20_col3" class="data row20 col3" >-6.274944</td>
-      <td id="T_575e8_row20_col4" class="data row20 col4" >-6.621247</td>
-      <td id="T_575e8_row20_col5" class="data row20 col5" >-1.603295</td>
+      <th id="T_52f20_level0_row20" class="row_heading level0 row20" >20</th>
+      <td id="T_52f20_row20_col0" class="data row20 col0" >[0.00077426]</td>
+      <td id="T_52f20_row20_col1" class="data row20 col1" >0.600000</td>
+      <td id="T_52f20_row20_col2" class="data row20 col2" >0.667200</td>
+      <td id="T_52f20_row20_col3" class="data row20 col3" >-6.274944</td>
+      <td id="T_52f20_row20_col4" class="data row20 col4" >-6.621247</td>
+      <td id="T_52f20_row20_col5" class="data row20 col5" >-0.260251</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row21" class="row_heading level0 row21" >21</th>
-      <td id="T_575e8_row21_col0" class="data row21 col0" >[0.00077426]</td>
-      <td id="T_575e8_row21_col1" class="data row21 col1" >0.760000</td>
-      <td id="T_575e8_row21_col2" class="data row21 col2" >0.784893</td>
-      <td id="T_575e8_row21_col3" class="data row21 col3" >-10.308423</td>
-      <td id="T_575e8_row21_col4" class="data row21 col4" >-4.192636</td>
-      <td id="T_575e8_row21_col5" class="data row21 col5" >-1.481131</td>
+      <th id="T_52f20_level0_row21" class="row_heading level0 row21" >21</th>
+      <td id="T_52f20_row21_col0" class="data row21 col0" >[0.00077426]</td>
+      <td id="T_52f20_row21_col1" class="data row21 col1" >0.760000</td>
+      <td id="T_52f20_row21_col2" class="data row21 col2" >0.784893</td>
+      <td id="T_52f20_row21_col3" class="data row21 col3" >-10.308423</td>
+      <td id="T_52f20_row21_col4" class="data row21 col4" >-4.192636</td>
+      <td id="T_52f20_row21_col5" class="data row21 col5" >-0.556900</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row22" class="row_heading level0 row22" >22</th>
-      <td id="T_575e8_row22_col0" class="data row22 col0" >[0.00599484]</td>
-      <td id="T_575e8_row22_col1" class="data row22 col1" >0.720000</td>
-      <td id="T_575e8_row22_col2" class="data row22 col2" >0.798077</td>
-      <td id="T_575e8_row22_col3" class="data row22 col3" >0.022357</td>
-      <td id="T_575e8_row22_col4" class="data row22 col4" >6.860426</td>
-      <td id="T_575e8_row22_col5" class="data row22 col5" >1.188093</td>
+      <th id="T_52f20_level0_row22" class="row_heading level0 row22" >22</th>
+      <td id="T_52f20_row22_col0" class="data row22 col0" >[0.00599484]</td>
+      <td id="T_52f20_row22_col1" class="data row22 col1" >0.720000</td>
+      <td id="T_52f20_row22_col2" class="data row22 col2" >0.798077</td>
+      <td id="T_52f20_row22_col3" class="data row22 col3" >0.022357</td>
+      <td id="T_52f20_row22_col4" class="data row22 col4" >6.860426</td>
+      <td id="T_52f20_row22_col5" class="data row22 col5" >-0.063218</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row23" class="row_heading level0 row23" >23</th>
-      <td id="T_575e8_row23_col0" class="data row23 col0" >[0.00077426]</td>
-      <td id="T_575e8_row23_col1" class="data row23 col1" >0.720000</td>
-      <td id="T_575e8_row23_col2" class="data row23 col2" >0.777244</td>
-      <td id="T_575e8_row23_col3" class="data row23 col3" >-1.691465</td>
-      <td id="T_575e8_row23_col4" class="data row23 col4" >4.307596</td>
-      <td id="T_575e8_row23_col5" class="data row23 col5" >0.951462</td>
+      <th id="T_52f20_level0_row23" class="row_heading level0 row23" >23</th>
+      <td id="T_52f20_row23_col0" class="data row23 col0" >[0.00077426]</td>
+      <td id="T_52f20_row23_col1" class="data row23 col1" >0.720000</td>
+      <td id="T_52f20_row23_col2" class="data row23 col2" >0.777244</td>
+      <td id="T_52f20_row23_col3" class="data row23 col3" >-1.691465</td>
+      <td id="T_52f20_row23_col4" class="data row23 col4" >4.307596</td>
+      <td id="T_52f20_row23_col5" class="data row23 col5" >-0.095135</td>
     </tr>
     <tr>
-      <th id="T_575e8_level0_row24" class="row_heading level0 row24" >24</th>
-      <td id="T_575e8_row24_col0" class="data row24 col0" >[0.00077426]</td>
-      <td id="T_575e8_row24_col1" class="data row24 col1" >0.420000</td>
-      <td id="T_575e8_row24_col2" class="data row24 col2" >0.323200</td>
-      <td id="T_575e8_row24_col3" class="data row24 col3" >11.201457</td>
-      <td id="T_575e8_row24_col4" class="data row24 col4" >3.905358</td>
-      <td id="T_575e8_row24_col5" class="data row24 col5" >1.253140</td>
+      <th id="T_52f20_level0_row24" class="row_heading level0 row24" >24</th>
+      <td id="T_52f20_row24_col0" class="data row24 col0" >[0.00077426]</td>
+      <td id="T_52f20_row24_col1" class="data row24 col1" >0.420000</td>
+      <td id="T_52f20_row24_col2" class="data row24 col2" >0.323200</td>
+      <td id="T_52f20_row24_col3" class="data row24 col3" >11.201457</td>
+      <td id="T_52f20_row24_col4" class="data row24 col4" >3.905358</td>
+      <td id="T_52f20_row24_col5" class="data row24 col5" >0.344680</td>
     </tr>
   </tbody>
 </table>
@@ -15971,7 +15987,7 @@ Kelly PNL: 20.06039080559668
         <span class="n">df_test</span><span class="p">[</span><span class="s1">'home_prob'</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_prob</span>
         <span class="n">df_test</span><span class="p">[</span><span class="s1">'away_prob'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">df_test</span><span class="o">.</span><span class="n">home_prob</span>
 
-        <span class="n">flat_1u_pnl</span><span class="p">,</span> <span class="n">win_1u_pnl</span><span class="p">,</span> <span class="n">kelly_pnl</span> <span class="o">=</span> <span class="n">profitize</span><span class="p">(</span><span class="n">df_test</span><span class="p">,</span> <span class="n">aggregated</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">kelly_scale</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">flat_1u_pnl</span><span class="p">,</span> <span class="n">win_1u_pnl</span><span class="p">,</span> <span class="n">kelly_pnl</span> <span class="o">=</span> <span class="n">profitize</span><span class="p">(</span><span class="n">df_test</span><span class="p">,</span> <span class="n">aggregated</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">kelly_scale</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
         <span class="n">df_test</span><span class="p">[</span><span class="s1">'flat_1u_pnl'</span><span class="p">]</span> <span class="o">=</span> <span class="n">flat_1u_pnl</span>
         <span class="n">df_test</span><span class="p">[</span><span class="s1">'win_1u_pnl'</span><span class="p">]</span> <span class="o">=</span> <span class="n">win_1u_pnl</span>
         <span class="n">df_test</span><span class="p">[</span><span class="s1">'kelly_pnl'</span><span class="p">]</span> <span class="o">=</span> <span class="n">kelly_pnl</span>
@@ -16070,9 +16086,9 @@ Kelly PNL: 20.06039080559668
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div>                            <div id="5edefc61-6339-47dd-8d4d-0b713de17684" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("5edefc61-6339-47dd-8d4d-0b713de17684")) {                    Plotly.newPlot(                        "5edefc61-6339-47dd-8d4d-0b713de17684",                        [{"fillpattern":{"shape":""},"hovertemplate":"season=2022\u003cbr\u003egame_date=%{x}\u003cbr\u003ecum_kelly_pnl=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"2022","line":{"color":"#636efa"},"marker":{"symbol":"circle"},"mode":"lines","name":"2022","orientation":"v","showlegend":true,"stackgroup":"1","x":["2022-10-14T00:00:00","2022-10-14T00:00:00","2022-10-14T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-19T00:00:00","2022-10-19T00:00:00","2022-10-19T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-21T00:00:00","2022-10-21T00:00:00","2022-10-21T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-23T00:00:00","2022-10-23T00:00:00","2022-10-23T00:00:00","2022-10-23T00:00:00","2022-10-23T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-26T00:00:00","2022-10-26T00:00:00","2022-10-26T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-30T00:00:00","2022-10-30T00:00:00","2022-10-30T00:00:00","2022-10-30T00:00:00","2022-10-30T00:00:00","2022-10-31T00:00:00","2022-10-31T00:00:00","2022-10-31T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-02T00:00:00","2022-11-02T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-04T00:00:00","2022-11-04T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-06T00:00:00","2022-11-06T00:00:00","2022-11-06T00:00:00","2022-11-07T00:00:00","2022-11-07T00:00:00","2022-11-07T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-09T00:00:00","2022-11-09T00:00:00","2022-11-09T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-11T00:00:00","2022-11-11T00:00:00","2022-11-11T00:00:00","2022-11-11T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-14T00:00:00","2022-11-14T00:00:00","2022-11-14T00:00:00","2022-11-14T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-16T00:00:00","2022-11-16T00:00:00","2022-11-16T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-18T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-20T00:00:00","2022-11-20T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-22T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-27T00:00:00","2022-11-27T00:00:00","2022-11-27T00:00:00","2022-11-27T00:00:00","2022-11-27T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-30T00:00:00","2022-11-30T00:00:00","2022-11-30T00:00:00","2022-11-30T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-02T00:00:00","2022-12-02T00:00:00","2022-12-02T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-04T00:00:00","2022-12-04T00:00:00","2022-12-04T00:00:00","2022-12-04T00:00:00","2022-12-04T00:00:00","2022-12-05T00:00:00","2022-12-05T00:00:00","2022-12-05T00:00:00","2022-12-05T00:00:00","2022-12-05T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-08T00:00:00","2022-12-08T00:00:00","2022-12-08T00:00:00","2022-12-08T00:00:00","2022-12-08T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-12T00:00:00","2022-12-12T00:00:00","2022-12-12T00:00:00","2022-12-12T00:00:00","2022-12-12T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-14T00:00:00","2022-12-14T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-16T00:00:00","2022-12-16T00:00:00","2022-12-16T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-18T00:00:00","2022-12-18T00:00:00","2022-12-18T00:00:00","2022-12-18T00:00:00","2022-12-18T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-28T00:00:00","2022-12-28T00:00:00","2022-12-28T00:00:00","2022-12-28T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-30T00:00:00","2022-12-30T00:00:00","2022-12-30T00:00:00","2022-12-30T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2023-01-01T00:00:00","2023-01-01T00:00:00","2023-01-01T00:00:00","2023-01-01T00:00:00","2023-01-01T00:00:00","2023-01-02T00:00:00","2023-01-02T00:00:00","2023-01-02T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-04T00:00:00","2023-01-04T00:00:00","2023-01-04T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-09T00:00:00","2023-01-09T00:00:00","2023-01-09T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-11T00:00:00","2023-01-11T00:00:00","2023-01-11T00:00:00","2023-01-11T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-13T00:00:00","2023-01-13T00:00:00","2023-01-13T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-15T00:00:00","2023-01-15T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-18T00:00:00","2023-01-18T00:00:00","2023-01-18T00:00:00","2023-01-18T00:00:00","2023-01-18T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-20T00:00:00","2023-01-20T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-22T00:00:00","2023-01-22T00:00:00","2023-01-22T00:00:00","2023-01-22T00:00:00","2023-01-22T00:00:00","2023-01-23T00:00:00","2023-01-23T00:00:00","2023-01-23T00:00:00","2023-01-23T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-25T00:00:00","2023-01-25T00:00:00","2023-01-25T00:00:00","2023-01-25T00:00:00","2023-01-25T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-29T00:00:00","2023-01-29T00:00:00","2023-01-30T00:00:00","2023-01-31T00:00:00","2023-01-31T00:00:00","2023-02-01T00:00:00","2023-02-01T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-08T00:00:00","2023-02-08T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-10T00:00:00","2023-02-10T00:00:00","2023-02-10T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-12T00:00:00","2023-02-12T00:00:00","2023-02-12T00:00:00","2023-02-13T00:00:00","2023-02-13T00:00:00","2023-02-13T00:00:00","2023-02-13T00:00:00","2023-02-13T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-17T00:00:00","2023-02-17T00:00:00","2023-02-17T00:00:00","2023-02-17T00:00:00","2023-02-17T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-22T00:00:00","2023-02-22T00:00:00","2023-02-22T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-24T00:00:00","2023-02-24T00:00:00","2023-02-24T00:00:00","2023-02-24T00:00:00","2023-02-24T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-27T00:00:00","2023-02-27T00:00:00","2023-02-27T00:00:00","2023-02-27T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-03T00:00:00","2023-03-03T00:00:00","2023-03-03T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-05T00:00:00","2023-03-05T00:00:00","2023-03-05T00:00:00","2023-03-05T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-08T00:00:00","2023-03-08T00:00:00","2023-03-08T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-10T00:00:00","2023-03-10T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-13T00:00:00","2023-03-13T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-15T00:00:00","2023-03-15T00:00:00","2023-03-15T00:00:00","2023-03-15T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-17T00:00:00","2023-03-17T00:00:00","2023-03-17T00:00:00","2023-03-17T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-20T00:00:00","2023-03-20T00:00:00","2023-03-20T00:00:00","2023-03-20T00:00:00","2023-03-20T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-22T00:00:00","2023-03-22T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-24T00:00:00","2023-03-24T00:00:00","2023-03-24T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-26T00:00:00","2023-03-26T00:00:00","2023-03-26T00:00:00","2023-03-26T00:00:00","2023-03-26T00:00:00","2023-03-27T00:00:00","2023-03-27T00:00:00","2023-03-27T00:00:00","2023-03-27T00:00:00","2023-03-27T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-29T00:00:00","2023-03-29T00:00:00","2023-03-29T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-31T00:00:00","2023-03-31T00:00:00","2023-03-31T00:00:00","2023-03-31T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-03T00:00:00","2023-04-03T00:00:00","2023-04-03T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-05T00:00:00","2023-04-05T00:00:00","2023-04-05T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-09T00:00:00","2023-04-09T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-12T00:00:00","2023-04-12T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-14T00:00:00","2023-04-14T00:00:00","2023-04-17T00:00:00","2023-04-17T00:00:00","2023-04-17T00:00:00","2023-04-18T00:00:00","2023-04-18T00:00:00","2023-04-18T00:00:00","2023-04-19T00:00:00","2023-04-19T00:00:00","2023-04-19T00:00:00","2023-04-19T00:00:00","2023-04-20T00:00:00","2023-04-20T00:00:00","2023-04-20T00:00:00","2023-04-20T00:00:00","2023-04-21T00:00:00","2023-04-21T00:00:00","2023-04-21T00:00:00","2023-04-21T00:00:00","2023-04-22T00:00:00","2023-04-22T00:00:00","2023-04-22T00:00:00","2023-04-22T00:00:00","2023-04-23T00:00:00","2023-04-24T00:00:00","2023-04-24T00:00:00","2023-04-24T00:00:00","2023-04-24T00:00:00","2023-04-25T00:00:00","2023-04-25T00:00:00","2023-04-25T00:00:00","2023-04-26T00:00:00","2023-04-26T00:00:00","2023-04-27T00:00:00","2023-04-27T00:00:00","2023-04-27T00:00:00","2023-04-28T00:00:00","2023-04-28T00:00:00","2023-04-28T00:00:00","2023-04-29T00:00:00","2023-04-29T00:00:00","2023-04-30T00:00:00","2023-04-30T00:00:00","2023-05-01T00:00:00","2023-05-02T00:00:00","2023-05-02T00:00:00","2023-05-03T00:00:00","2023-05-03T00:00:00","2023-05-04T00:00:00","2023-05-05T00:00:00","2023-05-06T00:00:00","2023-05-07T00:00:00","2023-05-07T00:00:00","2023-05-07T00:00:00","2023-05-08T00:00:00","2023-05-09T00:00:00","2023-05-09T00:00:00","2023-05-10T00:00:00","2023-05-10T00:00:00","2023-05-11T00:00:00","2023-05-11T00:00:00","2023-05-12T00:00:00","2023-05-12T00:00:00","2023-05-13T00:00:00","2023-05-14T00:00:00","2023-05-15T00:00:00","2023-05-18T00:00:00","2023-05-19T00:00:00","2023-05-20T00:00:00","2023-05-21T00:00:00","2023-05-22T00:00:00","2023-05-23T00:00:00","2023-05-24T00:00:00","2023-05-25T00:00:00","2023-05-27T00:00:00","2023-05-29T00:00:00","2023-06-03T00:00:00","2023-06-05T00:00:00","2023-06-08T00:00:00","2023-06-10T00:00:00"],"xaxis":"x","y":[-2.190821508317168,-4.549075768500446,-7.361459942663252,-10.39349197721977,-13.665071742431214,-15.714633724006589,-18.810093985476133,-21.488801766978018,-24.403682694642875,-20.377521994520404,-23.445394239882884,-20.78134808165214,-16.42847928436604,-12.182036696967323,-9.533317357972296,-9.533317357972296,-7.080099398416355,-7.080099398416355,-10.086650199938312,-0.3338365205179379,-3.685313041388839,-6.4269866773556235,-3.5972892983874067,-6.392867732956528,-9.278094495432203,-12.183034447990876,-14.73065207413784,-10.633600923136601,-3.545567326200631,-6.290783275034583,-0.5682062189329473,-3.3410818704787033,1.9879495824802724,-0.9499497131142309,1.6406002102275048,-1.3500101647786753,5.576928478435197,8.980203798958874,5.917136438800208,3.0512171682335505,0.35811819571164305,5.224929308120609,2.1600448178270826,9.242434090723838,6.380291153073017,6.380291153073017,13.251580640590664,10.389644475430917,13.056359599972842,18.642670795514228,22.887847059324738,19.87427246729529,16.92709489673928,14.02547006822299,16.83337250709654,13.691248101777678,17.647731330807627,14.894723830416691,12.973182728226943,11.089807392965826,8.418128686795178,15.614976587795777,18.391248655884894,18.391248655884894,15.755211809348715,12.728239778398859,9.536133379388492,9.536133379388492,6.631240432369041,6.631240432369041,3.863451118285321,6.73761997042133,3.995748379738971,3.995748379738971,1.3284669029708178,3.8900231513479167,8.735692030783277,6.712824214992752,11.327485068692617,8.541005680149624,11.081032274237378,8.425136533116323,11.023581389380213,8.95140691015241,11.694817938857732,15.581369578321791,13.616070194272607,17.2576116668671,14.387992354824929,17.750664925911995,20.346115633626166,17.768563927713846,15.015647362046506,18.073331668726816,18.073331668726816,15.26135061398174,15.26135061398174,13.300437053527821,17.88401046755012,14.963249155718765,12.64513642225802,15.394054765704663,15.394054765704663,17.89983626911854,17.89983626911854,14.828414383677755,17.48688043692254,20.715649230320196,17.9743100217355,15.778811840116918,13.406552407139682,16.875775855815817,14.14623754016446,11.827795766149949,9.091978658335353,9.091978658335353,6.559514631219454,10.72955860576514,8.281408628603073,14.276049670495452,11.595434010547626,8.8086009575865,11.380221627747689,8.542241442444073,6.55473685350076,11.896488869910316,14.417157385004254,12.322795079514192,14.854281974401086,14.854281974401086,12.07557912669644,12.07557912669644,16.437412697782484,14.2274358476511,11.733860905602736,9.419424722223674,12.51441905300072,16.401217230858343,19.911869235017996,22.644905612405594,22.644905612405594,22.644905612405594,22.644905612405594,19.786745237625478,17.034809217470695,17.034809217470695,20.863104367846226,20.863104367846226,24.68746084419402,31.545325080682495,28.77399799634948,26.230560793015904,23.508929207493715,27.908212175156866,25.727380721985597,28.801938528453693,33.17496182626029,35.7230872791364,39.53880306656307,37.321106631932366,43.40930201754246,43.40930201754246,40.604438803271144,37.31803982470093,42.52542087497705,39.794928898014774,42.675759295597565,46.67420388837392,51.2475714757255,51.2475714757255,51.2475714757255,54.050415633165926,54.050415633165926,51.22848882910357,51.22848882910357,48.91944553754118,46.144835127448616,43.148372599489576,40.082012473966856,38.123181947866826,35.43228706275515,32.476352591624256,29.59576655440895,26.65115842159248,33.70447778501385,31.691389423045578,28.733190433807305,28.733190433807305,32.29356082050326,32.29356082050326,37.33309454630613,35.350530299040614,35.350530299040614,32.289955946001506,35.28843094422605,32.37416708850377,29.506876728039163,26.51082724879466,23.892289999139837,23.892289999139837,28.146716764840768,25.23862089673749,30.162728052394826,27.345623983412175,25.27936774718657,31.429689609703196,28.673440998306994,31.699331331123847,28.81312876724674,26.898778467707285,29.610350228535797,34.000564605823094,31.20170974853801,28.413043918994404,34.163112603856845,31.384228995975388,28.578434855058767,25.324566221685007,25.324566221685007,27.885704794934895,30.42721247265494,33.92646948741154,31.302426803615397,29.53158546479204,26.82278849262034,26.82278849262034,26.82278849262034,29.498280369961766,32.8272377004888,30.219298563801946,32.96355437632378,30.26063020026429,32.805237512635294,30.119142753753696,32.78171133153355,36.78542322388529,33.89779483800353,37.00284888372416,33.53834206926464,31.12803599424299,33.67786663830027,30.941522520096584,27.557745379834508,27.557745379834508,27.557745379834508,30.228669836053346,27.49378466301344,24.973614947837458,24.973614947837458,24.973614947837458,22.08729157704921,25.95851316712733,24.4197671748923,21.856305078212205,21.856305078212205,26.169223228238017,23.27219878290446,23.27219878290446,28.260367395753942,25.549389189703675,28.232291683583743,28.232291683583743,26.522818957885182,26.522818957885182,23.4117907490767,20.827523154878623,20.827523154878623,23.880298608548898,28.415727630429345,25.815209538364478,25.815209538364478,23.267607977587257,20.784707385414666,18.043624687611633,15.276446887333618,17.82126567385063,25.08370567290711,22.28098907407557,19.893613161952906,19.893613161952906,24.048511747088355,24.048511747088355,27.608046654515334,27.608046654515334,24.838035694589944,28.80840831838783,27.06585627433743,25.336546019074184,27.93224821396997,24.54076338607505,21.978763589809898,19.469892507995358,16.885307783700362,20.695618366623012,24.05010940556747,28.841960702097495,26.3399082542307,29.331879911034804,32.48323014595297,35.107873637271446,33.45271118389884,33.45271118389884,30.731897246894842,27.770168639772546,27.770168639772546,26.3489133516455,28.987375075226467,31.59052656296758,31.59052656296758,34.293267969303415,31.761360429403133,31.761360429403133,28.36663458669991,25.79803009760531,25.79803009760531,25.79803009760531,23.285180677651635,25.842528905744143,24.460881289117413,27.282599505745925,24.702940602063187,21.569617591781114,26.084149135675823,23.39870089792803,21.981915239753505,24.593060793819088,24.593060793819088,22.084364096951067,19.586271769505366,22.258736581920644,22.258736581920644,25.96490391093778,29.474019845318388,33.81078930998483,31.020270492693978,29.686443070180204,27.13269166049033,32.615536603694714,35.384367208400626,38.344170833398636,40.907108783803686,46.97380452681822,44.40510628624627,42.14851792924617,39.54764154074526,37.0655063071377,34.813561564892474,37.858159003108916,35.31147952409295,32.997698774533156,36.21417112473432,39.641214077977445,37.40901816558466,37.40901816558466,34.99575263616557,38.60729955738587,41.7073487453129,39.379582884787595,44.24542319203313,47.69362888971129,50.57534757271525,47.11436365827557,49.95895666520051,47.956658589819945,45.62613907771666,45.62613907771666,43.164791980824134,43.164791980824134,46.34598324762647,49.06950887901635,52.09353819063297,49.52616397150425,46.8447856009843,49.651534000421684,47.03606141728228,44.477475476280034,46.76020246573249,49.958362086643184,47.685302253678636,45.423448424900315,48.37998777960412,51.202595160698806,53.86032792057491,57.885177303637086,55.27908570158299,53.00225298752185,52.41424881222356,49.88361575026047,49.88361575026047,46.14430667031788,48.67199289849059,46.33880530549012,48.87649639578015,46.531024994055564,49.05515701043574,51.64925046535334,48.8481441191672,44.80937904089552,47.243614078137355,50.73920397927877,50.73920397927877,47.50623857436751,44.9762163866325,42.75334786214238,39.790798322553,39.790798322553,42.46734925246143,40.426026432790984,38.15262238469211,42.13638332416205,42.13638332416205,39.7140822611924,42.79427301608371,39.77552837496254,42.17039220362562,39.76112427034887,38.1908222744118,40.98010334034209,44.38672863610106,42.090041180100904,45.557323901788294,41.48546555564178,39.650317945133764,37.330947324617334,37.330947324617334,40.78066738061638,44.86640476200049,42.48377268413425,47.59917709513486,50.13817466985033,52.715286275678324,57.23930171066527,55.38907412457251,55.38907412457251,52.95269001885099,52.95269001885099,50.73483714580266,53.62604138099464,51.93048872474464,55.48186527792588,51.43701304860637,51.43701304860637,54.04894322743537,56.6853268605539,60.054065305725885,65.40252292130887,62.77661908479393,62.77661908479393,60.332800271140115,60.332800271140115,57.90251133966017,60.794378184082476,58.463874765889244,56.31464334391575,59.60000520548496,63.08178181980913,63.08178181980913,59.182346422232825,56.95409809738982,56.95409809738982,54.77010243194377,52.43951417008847,50.24427302044149,47.942042605339175,47.942042605339175,45.6096494110916,41.5743874975817,41.5743874975817,44.305123298995476,47.30017913480932,45.29355584000136,44.12488654875779,47.29911194130946,43.2494389572887,39.64889585894643,37.56349853206275,35.725746038158775,33.30448286638714,36.41399186921885,36.41399186921885,39.33596052518217,41.793067106867426,38.328368465045415,41.716307080589424,41.716307080589424,45.77681836646772,48.81804634962071,45.810596211909726,43.43534962025351,41.66714828655138,44.539253463361575,47.7132205900811,50.23036981659701,52.569116992360115,49.62725442361399,51.896820401257344,49.60424354455659,48.17983222586515,50.88346022253048,53.77051062621821,49.673882176786,52.265716801602444,56.026822372135584,58.52260022154407,61.390213887797195,59.16773677831317,57.20102993877146,55.261879540813965,58.502835931298875,56.113820448298206,59.500069915690375,59.500069915690375,62.5785234841892,64.92636460255709,67.4498604268666,67.4498604268666,70.34500939804956,68.19975206574136,70.73828473103288,68.43150636320267,71.43839857214535,75.26648153254783,72.91523546882547,76.8939397524953,80.19723107468006,77.92246949448617,76.06881390777495,78.9255542059118,75.69799032451624,73.46802551124688,76.02473863500826,76.02473863500826,79.23534746742166,79.23534746742166,82.10977350783487,85.61000422068703,83.34008568700006,86.52857190597692,86.52857190597692,89.60186373067383,85.68913518538402,83.80585806947853,87.31475513892438,83.37212261021875,86.37325325184513,91.15896616626834,87.06425373169601,85.1907807296287,87.68203188739511,87.68203188739511,84.64042153997552,87.28874931690275,83.22034870665466,80.96727249913661,78.44946835257349,82.3826613689188,82.3826613689188,84.60669346666158,88.54340653584943,92.8516098091915,95.43477732985353,93.0386948408833,96.27116844997033,92.4799277164432,88.41082972082387,85.94162292127785,89.24776714102782,85.8737196462677,83.95480787256345,83.95480787256345,86.7537872905069,86.7537872905069,86.7537872905069,86.7537872905069,85.90299263033826,85.90299263033826,85.90299263033826,85.90299263033826,84.175482965465,84.175482965465,88.07241715284512,85.94795842882114,82.8763801268213,86.81194429890108,86.81194429890108,89.54566703695114,92.7656444023786,92.7656444023786,88.74188395396415,86.5389148554996,85.11631522063387,80.86818321124163,83.5016676860232,86.16912925177705,88.69410850735045,86.4877242450929,84.30003990904069,80.15091611614807,80.15091611614807,83.52140632136148,86.00076311969839,86.00076311969839,88.54668223173509,91.34382849067637,93.7863671406488,89.67455278188763,93.96835568566041,93.13159504044916,91.03958916336789,91.03958916336789,93.78466351224274,92.84075312017032,96.29000451316887,98.59194487870134,96.81171322386388,96.81171322386388,96.81171322386388,94.5637255100653,98.09525807972283,95.7777587434929,95.7777587434929,98.48848415273416,96.18739218849606,100.03907419990675,102.71899129305015,100.53435898594847,98.74640131214406,103.46347420971288,106.24937609398461,104.40613821859537,104.40613821859537,107.328310263546,110.32044396593129,107.08893974551657,103.02218418848157,105.51894576323969,103.72362457741032,106.01698484334665,103.74885062223011,106.78299111983982,102.5532445975595,100.58201516540123,98.72793491948916,101.86093417100257,99.26377487552064,97.17463929842845,93.25712554510272,93.25712554510272,95.7869020655925,98.17439133795158,93.91864884039002,96.88814655088326,92.86496127887985,92.86496127887985,96.22571867556023,96.22571867556023,99.47857645290608,96.4902894651404,93.25158785060974,91.3454450238249,94.65058541489006,91.9213641041799,89.77093939143501,87.65014397870343,90.15643477568864,88.3305931339571,92.02257331757467,94.74320181653658,97.68353356597164,97.68353356597164,95.72627894474137,92.80650211026185,95.17441771164792,97.69743271455658,95.03350139546184,97.54419710229288,93.20363173935701,90.11672734796765,88.49705690903609,91.0467262821308,86.59499779071201,86.59499779071201,84.280137455441,82.84482968877413,80.86836093752957,80.86836093752957,84.17696747826525,80.62724788018042,78.36998512358794,78.36998512358794,76.12995433640847,79.29588755842576,81.8452708064143,79.48773905496112,77.57972518169375,77.57972518169375,75.73784641090774,79.62220738479786,79.62220738479786,77.56989542815212,75.61841590108777,78.3474087029532,75.32572266908953,79.74364365761431,83.69887909433356,81.9099988930804,81.9099988930804,78.11688132215254,73.9959748894799,77.02966156385806,79.64744386430824,77.4807380230363,75.69160333560752,73.31110726889777,76.26145745015266,79.9446703680002,82.80742159979464,80.74297213378362,78.99636880167922,75.95396811666711,79.07149431551943,74.86694773091224,78.15003853535906,82.04993878695198,79.05340906908405,77.05280748497513,75.68275151980174,73.48285200646316,73.48285200646316,71.40513201966617,69.40218962059988,67.35333800747452,67.35333800747452,70.10668297195795,73.25961663231861,69.4166123908461,67.38785063551373,69.79018276304228,69.79018276304228,74.58029324951599,77.69812635411647,77.69812635411647,80.27305869439115,77.14622416619905,77.14622416619905,80.68967493053155,80.68967493053155,78.56009517309086,76.48741314144087,76.48741314144087,80.05788156648943,77.52842700652971,73.34429576708004,73.34429576708004,73.34429576708004,71.34954468659825,68.0105420938551,68.0105420938551,65.56745323111195,69.6123372862865,69.6123372862865,77.96127454119926,77.96127454119926,75.2156683324482,73.99708114283152,71.68835596870113,70.36140148780515,70.36140148780515,73.41710873267093,76.15075196954226,79.03168492686532,81.65373858841976,84.83324792170141,88.22635978755395,86.02516258020172,84.27567620768703,87.84492766154082,90.65894763969871,90.65894763969871,88.51314863891326,91.20553361251913,94.92979984207871,90.96842202861889,93.53748520607724,96.47132733520867,100.01667489195101,95.92335666160689,99.09512524385268,101.32079716541418,104.10719073860263,107.17533835490893,106.01605606137188,106.01605606137188,109.8864032587766,112.40140335326318,112.40140335326318,111.41834848972891,109.15548272447836,104.739768830563,107.83018209508931,103.11156750462145,103.11156750462145,101.15381353043095,105.60123069693066,102.66644398967725,106.42031095928292,106.42031095928292,106.42031095928292,109.1053915015052,112.08388523410272,109.93054503192073,109.93054503192073,113.3717629163437,109.38671391874655,114.09621368089662,111.81093658380826,108.05932003849219,112.07670117150352,110.19793360470591,112.53087096005191,110.38141370297703,108.18193396336702,108.18193396336702,105.03540734826748,105.03540734826748,102.8303935439729,102.8303935439729,106.66799336104094,105.10278771781408,103.59590685179406,106.96691169026006,109.49497824063731,104.8653443701797,107.30768461187799,106.25474414976533,109.23169669308314,106.84913017042305,106.84913017042305,105.03784553106463,107.95965289753504,106.1957012230722,111.41982310908315,108.61229389353407,108.61229389353407,110.90235593388519,114.22950478099747,114.22950478099747,111.83075709306175,107.54778403653074,110.20040932256148,114.98685525845,117.39230425522567,115.11887308534654,118.88313329521401,118.88313329521401,122.58342395179639,120.65106818129166,120.65106818129166,118.73971575051031,121.4152752101898,123.88904600589761,123.88904600589761,123.88904600589761,119.73441254190794,119.73441254190794,123.37424480099058,123.37424480099058,127.83999673786116,125.98590790931142,125.98590790931142,128.51218363054997,126.10455669798702,123.17286263396902,120.74240310964822,123.41838591927569,121.45981548451573,124.49686055825877,124.49686055825877,122.02687571049111,126.95560767585847,129.54011942068553,133.49394080131682,136.1170179563395,139.3214163129475,142.29979009989617,145.1290637563896,147.98085632203373,145.7564882828037,143.5205291039633,143.5205291039633,141.30828389750783,139.43531497350304,139.43531497350304,142.04632775388876,137.900647568841,136.11543326338702,131.86792886115433,134.14656266767471,137.52193441229946,140.025383696433,142.52409537274096,145.63350477129066,143.90710917627283,143.90710917627283,146.8370966152732,149.96742377809068,152.58982079752886,155.35172169105792,158.1422795626825,157.32756767457477,153.0054275805134,151.117327317381,153.85701927755863,151.70461265201334,149.58849327502958,147.43035841777822,145.43405490982337,148.56316373631904,148.56316373631904,150.7801182338024,150.7801182338024,147.68278266974423,147.68278266974423,144.0526359565448,139.96579295219684,139.21728896131944,137.30240173916727,140.94596907462773,140.94596907462773,143.58973872042793,146.45626600613826,144.31292245420804,147.73193566979728,147.73193566979728,150.4696815985659,148.13355583892357,146.2993633229031,144.4435181681555,142.7040779396262,138.76500213720962,136.64285993482522,139.2115266374403,137.4656829284921,140.21286870078342,140.21286870078342,138.26712971510466,136.24567551776855,139.4658769114258,142.78704465801377,142.78704465801377,145.48895429425897,148.2297872359482,150.84133767002794,146.73788928190743,144.41333036559405,147.30463751221407,145.82497499240026,144.65269126763056,149.5395764312,152.4211857694835,150.9672055864004,150.9672055864004,154.80117761693015,157.99893406085363,157.99893406085363,156.85935545646404,159.32518333394106,162.7123077100695,158.56792785970228,161.24216281669376,159.68426836050895,162.63643164194752,160.79521035755224,163.58017712280963,163.58017712280963,163.58017712280963,160.44536942105864,163.75669317285275,163.75669317285275,166.85409600048968,164.71409894469147,167.98337965473732,172.03752473891257,172.03752473891257,170.03792643553058,170.03792643553058,167.92618129989003,165.7846110536307,165.7846110536307,163.60618681746647,159.46683514142535,157.1693755630829,159.56455452616663,162.77123990529793,165.08171194814227,165.08171194814227,165.08171194814227,168.03358036044477,170.5883010171161,166.6833229642373,170.12390530909826,167.88472079661534,170.83134422212686,168.59316659247432,166.76059317063837,166.76059317063837,169.65229884350813,172.50299417572478,175.73491428205028,171.61261170796925,171.61261170796925,169.19800869765191,171.76271155102938,175.12995600131836,172.54573807353293,172.54573807353293,172.54573807353293,175.22459498528045,178.0933195495902,181.2165697032725,183.86170837736867,183.86170837736867,181.62381157487357,183.99345295753236,179.61517422654973,177.51257530806143,175.47108103924108,177.98273418580624,175.73594001045706,178.26055122853253,181.42769953002605,184.38204090880132,182.6772436013619,179.87520259748138,178.5780370867239,178.5780370867239,182.8787357391654,182.8787357391654,186.61456789178,185.1011618617661,188.35737149468983,191.1876326602203,194.37720057203353,192.73300893097104,188.4739947925363,191.6286085188494,187.7401468531921,190.6215508261169,189.5115555142841,192.69008018998608,190.26782728138846,190.26782728138846,186.43113621117698,189.01552884053527,189.01552884053527,186.80068392759136,189.57635775920892,192.83672715007782,195.48850952064436,193.6404886516111,196.27543705839753,191.45153571193617,186.60989797291663,185.17405306491406,189.2077779256282,189.2077779256282,187.64380437789183,187.64380437789183,190.80735922891193,189.07459379578606,186.98164548186924,185.08437814790366,182.9220615945973,185.76879283601642,189.39520513495836,192.59162593865437,192.59162593865437,190.36984046133375,189.48702369879567,189.48702369879567,187.48993797084484,187.48993797084484,190.08165814391225,185.7689469112674,181.80498263178632,181.80498263178632,179.2135673742435,178.38772234923314,181.9304784378668,179.50155972949267,176.24762112631433,176.24762112631433,171.79294613408703,166.93336829457763,166.93336829457763,170.79865310821103,169.23627736784408,171.77678684709826,174.77048182168912,177.57311328889813,175.5850744400127,178.56635898860756,176.46131497045272,174.94527744306657,172.62323125895227,172.62323125895227,170.48250885246742,165.63086195634912,164.4976880685339,162.19342631584803,157.79735440898634,155.99495776656283,155.99495776656283,159.2013260007075,156.89774386966857,155.90097406168144,159.09305527693473,161.6074694650886,161.6074694650886,164.39309582028247,166.9862466011185,163.9514016053877,161.83806980357892,161.83806980357892,161.83806980357892,159.6533485117456,163.0714204529102,165.25072376129253,164.31238693538,168.3978422132334,166.28411529598526,163.40811129273894,161.56561445261116,157.09125802835942,160.21794475725423,162.92261296211646,161.35263535409607,159.14925230852023,154.93156453258675,153.5020910881272,155.66167998747795,159.5598619709839,157.4300596741382,160.6875720905383,158.95824819885325,161.86360793585422,159.73853798361776,157.4852231682711,157.4852231682711,157.4852231682711,157.4852231682711,155.78052302263836,155.78052302263836,154.36715614958965,149.8571417117678,149.8571417117678,148.47323608384795,151.29050371024599,153.39548613279365,153.39548613279365,151.57683910214848,149.64840094772057,145.34251973748974,145.34251973748974,148.29508376177577,150.8287899819625,148.71168941336882,146.93789543544648,146.93789543544648,149.71411232358975,148.16465486991515,148.16465486991515,148.16465486991515,143.43171288255547,145.9795696950204,149.23850565099374,148.00126782513092,144.06638791545035,144.06638791545035,144.06638791545035,144.06638791545035,147.252773633237,142.79726834546676,141.3850493399925,143.97034134178872,146.14059479144754,141.64440750380473,145.15311118334728,145.15311118334728,143.14327717048354,143.14327717048354,141.04791681440577,144.06931194770505,146.84731468512183,150.20738769421658,150.20738769421658,147.66866231827913,147.66866231827913,145.99272292477343,143.93516937899759,142.58200742379753,145.37932257101986,143.44115763810717,141.35561507587082,141.35561507587082,144.9490002781394,142.775819800486,145.5708754701313,148.10440003036175,143.3433697445638,143.3433697445638,146.1418630421759,148.84004404035448,151.02097990555427,149.2320714613451,147.09773294304262,146.1429189286221,148.99809896903335,148.99809896903335,147.63982606533483,150.19469823220186,153.5300292334843,153.5300292334843,157.252261710115,157.252261710115,159.93005833247378,157.8654992087404,155.92064267594452,154.03539515956683,152.26153909919432,152.26153909919432,149.98591753338522,147.8463338909765,150.64526589592808,147.60021800954993,143.2716644004952,143.2716644004952,146.40790725303629,149.3061062829276,152.12593117871322,154.7811665382261,157.5531752244089,160.3105361743738,163.1868545548921,165.87036200404694,161.30831388658248,159.39362396121467,157.29360434220376,160.00400148762853,163.68338749193575,166.449421910526,166.449421910526,164.39224583084615,164.39224583084615,159.8407556123289,162.7355105803409,165.50844926639672,168.13473057296122,165.8174833446907,169.8452139878598,172.5039953620582,169.7389870397741,172.45336568746558,176.14030794741342,172.12785237321415,172.12785237321415,175.07717026615174,172.05798305746507,175.55644408406152,171.16669806786945,171.16669806786945,166.95804379284854,170.2818963229094,173.09994827852123,176.30992988943373,174.1324749090553,177.3989250321078,174.96302494643834,174.96302494643834,170.5845723925924,173.29978064101743,168.8271647477699,172.2613785946553,169.86809245264766,169.86809245264766,169.86809245264766,172.36533586802486,172.36533586802486,169.46205472696406,172.440041824754,169.3829442398577,166.70715888827613,169.34513819241894,171.97682133265815,171.97682133265815,171.97682133265815,171.97682133265815,174.85517607187538],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"bgcolor":"rgb(17,17,17)","angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"ternary":{"bgcolor":"rgb(17,17,17)","aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3","gridwidth":2},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3","gridwidth":2},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3","gridwidth":2}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","subunitcolor":"#506784","showland":true,"showlakes":true,"lakecolor":"rgb(17,17,17)"},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"sliderdefaults":{"bgcolor":"#C8D4E3","borderwidth":1,"bordercolor":"rgb(17,17,17)","tickwidth":0},"mapbox":{"style":"dark"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Date"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Profit \u002f Loss"}},"legend":{"title":{"text":"season"},"tracegroupgap":0},"margin":{"t":60}},                        {"responsive": true}                    ).then(function(){
+<div>                            <div id="4b9cb1d3-85a8-493b-8ced-58de5c7a0f16" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("4b9cb1d3-85a8-493b-8ced-58de5c7a0f16")) {                    Plotly.newPlot(                        "4b9cb1d3-85a8-493b-8ced-58de5c7a0f16",                        [{"fillpattern":{"shape":""},"hovertemplate":"season=2022\u003cbr\u003egame_date=%{x}\u003cbr\u003ecum_kelly_pnl=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"2022","line":{"color":"#636efa"},"marker":{"symbol":"circle"},"mode":"lines","name":"2022","orientation":"v","showlegend":true,"stackgroup":"1","x":["2022-10-14T00:00:00","2022-10-14T00:00:00","2022-10-14T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-15T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-17T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-18T00:00:00","2022-10-19T00:00:00","2022-10-19T00:00:00","2022-10-19T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-20T00:00:00","2022-10-21T00:00:00","2022-10-21T00:00:00","2022-10-21T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-22T00:00:00","2022-10-23T00:00:00","2022-10-23T00:00:00","2022-10-23T00:00:00","2022-10-23T00:00:00","2022-10-23T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-24T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-25T00:00:00","2022-10-26T00:00:00","2022-10-26T00:00:00","2022-10-26T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-27T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-28T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-29T00:00:00","2022-10-30T00:00:00","2022-10-30T00:00:00","2022-10-30T00:00:00","2022-10-30T00:00:00","2022-10-30T00:00:00","2022-10-31T00:00:00","2022-10-31T00:00:00","2022-10-31T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-01T00:00:00","2022-11-02T00:00:00","2022-11-02T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-03T00:00:00","2022-11-04T00:00:00","2022-11-04T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-05T00:00:00","2022-11-06T00:00:00","2022-11-06T00:00:00","2022-11-06T00:00:00","2022-11-07T00:00:00","2022-11-07T00:00:00","2022-11-07T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-08T00:00:00","2022-11-09T00:00:00","2022-11-09T00:00:00","2022-11-09T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-10T00:00:00","2022-11-11T00:00:00","2022-11-11T00:00:00","2022-11-11T00:00:00","2022-11-11T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-12T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-13T00:00:00","2022-11-14T00:00:00","2022-11-14T00:00:00","2022-11-14T00:00:00","2022-11-14T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-15T00:00:00","2022-11-16T00:00:00","2022-11-16T00:00:00","2022-11-16T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-17T00:00:00","2022-11-18T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-19T00:00:00","2022-11-20T00:00:00","2022-11-20T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-21T00:00:00","2022-11-22T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-23T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-25T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-26T00:00:00","2022-11-27T00:00:00","2022-11-27T00:00:00","2022-11-27T00:00:00","2022-11-27T00:00:00","2022-11-27T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-28T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-29T00:00:00","2022-11-30T00:00:00","2022-11-30T00:00:00","2022-11-30T00:00:00","2022-11-30T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-01T00:00:00","2022-12-02T00:00:00","2022-12-02T00:00:00","2022-12-02T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-03T00:00:00","2022-12-04T00:00:00","2022-12-04T00:00:00","2022-12-04T00:00:00","2022-12-04T00:00:00","2022-12-04T00:00:00","2022-12-05T00:00:00","2022-12-05T00:00:00","2022-12-05T00:00:00","2022-12-05T00:00:00","2022-12-05T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-06T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-07T00:00:00","2022-12-08T00:00:00","2022-12-08T00:00:00","2022-12-08T00:00:00","2022-12-08T00:00:00","2022-12-08T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-09T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-10T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-11T00:00:00","2022-12-12T00:00:00","2022-12-12T00:00:00","2022-12-12T00:00:00","2022-12-12T00:00:00","2022-12-12T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-13T00:00:00","2022-12-14T00:00:00","2022-12-14T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-15T00:00:00","2022-12-16T00:00:00","2022-12-16T00:00:00","2022-12-16T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-17T00:00:00","2022-12-18T00:00:00","2022-12-18T00:00:00","2022-12-18T00:00:00","2022-12-18T00:00:00","2022-12-18T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-19T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-20T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-21T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-22T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-23T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-27T00:00:00","2022-12-28T00:00:00","2022-12-28T00:00:00","2022-12-28T00:00:00","2022-12-28T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-29T00:00:00","2022-12-30T00:00:00","2022-12-30T00:00:00","2022-12-30T00:00:00","2022-12-30T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2022-12-31T00:00:00","2023-01-01T00:00:00","2023-01-01T00:00:00","2023-01-01T00:00:00","2023-01-01T00:00:00","2023-01-01T00:00:00","2023-01-02T00:00:00","2023-01-02T00:00:00","2023-01-02T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-03T00:00:00","2023-01-04T00:00:00","2023-01-04T00:00:00","2023-01-04T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-05T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-06T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-07T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-08T00:00:00","2023-01-09T00:00:00","2023-01-09T00:00:00","2023-01-09T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-10T00:00:00","2023-01-11T00:00:00","2023-01-11T00:00:00","2023-01-11T00:00:00","2023-01-11T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-12T00:00:00","2023-01-13T00:00:00","2023-01-13T00:00:00","2023-01-13T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-14T00:00:00","2023-01-15T00:00:00","2023-01-15T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-16T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-17T00:00:00","2023-01-18T00:00:00","2023-01-18T00:00:00","2023-01-18T00:00:00","2023-01-18T00:00:00","2023-01-18T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-19T00:00:00","2023-01-20T00:00:00","2023-01-20T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-21T00:00:00","2023-01-22T00:00:00","2023-01-22T00:00:00","2023-01-22T00:00:00","2023-01-22T00:00:00","2023-01-22T00:00:00","2023-01-23T00:00:00","2023-01-23T00:00:00","2023-01-23T00:00:00","2023-01-23T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-24T00:00:00","2023-01-25T00:00:00","2023-01-25T00:00:00","2023-01-25T00:00:00","2023-01-25T00:00:00","2023-01-25T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-26T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-27T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-28T00:00:00","2023-01-29T00:00:00","2023-01-29T00:00:00","2023-01-30T00:00:00","2023-01-31T00:00:00","2023-01-31T00:00:00","2023-02-01T00:00:00","2023-02-01T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-06T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-07T00:00:00","2023-02-08T00:00:00","2023-02-08T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-09T00:00:00","2023-02-10T00:00:00","2023-02-10T00:00:00","2023-02-10T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-11T00:00:00","2023-02-12T00:00:00","2023-02-12T00:00:00","2023-02-12T00:00:00","2023-02-13T00:00:00","2023-02-13T00:00:00","2023-02-13T00:00:00","2023-02-13T00:00:00","2023-02-13T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-14T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-15T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-16T00:00:00","2023-02-17T00:00:00","2023-02-17T00:00:00","2023-02-17T00:00:00","2023-02-17T00:00:00","2023-02-17T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-18T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-19T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-20T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-21T00:00:00","2023-02-22T00:00:00","2023-02-22T00:00:00","2023-02-22T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-23T00:00:00","2023-02-24T00:00:00","2023-02-24T00:00:00","2023-02-24T00:00:00","2023-02-24T00:00:00","2023-02-24T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-25T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-26T00:00:00","2023-02-27T00:00:00","2023-02-27T00:00:00","2023-02-27T00:00:00","2023-02-27T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-02-28T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-01T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-02T00:00:00","2023-03-03T00:00:00","2023-03-03T00:00:00","2023-03-03T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-04T00:00:00","2023-03-05T00:00:00","2023-03-05T00:00:00","2023-03-05T00:00:00","2023-03-05T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-06T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-07T00:00:00","2023-03-08T00:00:00","2023-03-08T00:00:00","2023-03-08T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-09T00:00:00","2023-03-10T00:00:00","2023-03-10T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-11T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-12T00:00:00","2023-03-13T00:00:00","2023-03-13T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-14T00:00:00","2023-03-15T00:00:00","2023-03-15T00:00:00","2023-03-15T00:00:00","2023-03-15T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-16T00:00:00","2023-03-17T00:00:00","2023-03-17T00:00:00","2023-03-17T00:00:00","2023-03-17T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-18T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-19T00:00:00","2023-03-20T00:00:00","2023-03-20T00:00:00","2023-03-20T00:00:00","2023-03-20T00:00:00","2023-03-20T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-21T00:00:00","2023-03-22T00:00:00","2023-03-22T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-23T00:00:00","2023-03-24T00:00:00","2023-03-24T00:00:00","2023-03-24T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-25T00:00:00","2023-03-26T00:00:00","2023-03-26T00:00:00","2023-03-26T00:00:00","2023-03-26T00:00:00","2023-03-26T00:00:00","2023-03-27T00:00:00","2023-03-27T00:00:00","2023-03-27T00:00:00","2023-03-27T00:00:00","2023-03-27T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-28T00:00:00","2023-03-29T00:00:00","2023-03-29T00:00:00","2023-03-29T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-30T00:00:00","2023-03-31T00:00:00","2023-03-31T00:00:00","2023-03-31T00:00:00","2023-03-31T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-01T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-02T00:00:00","2023-04-03T00:00:00","2023-04-03T00:00:00","2023-04-03T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-04T00:00:00","2023-04-05T00:00:00","2023-04-05T00:00:00","2023-04-05T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-06T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-08T00:00:00","2023-04-09T00:00:00","2023-04-09T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-10T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-11T00:00:00","2023-04-12T00:00:00","2023-04-12T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-13T00:00:00","2023-04-14T00:00:00","2023-04-14T00:00:00","2023-04-17T00:00:00","2023-04-17T00:00:00","2023-04-17T00:00:00","2023-04-18T00:00:00","2023-04-18T00:00:00","2023-04-18T00:00:00","2023-04-19T00:00:00","2023-04-19T00:00:00","2023-04-19T00:00:00","2023-04-19T00:00:00","2023-04-20T00:00:00","2023-04-20T00:00:00","2023-04-20T00:00:00","2023-04-20T00:00:00","2023-04-21T00:00:00","2023-04-21T00:00:00","2023-04-21T00:00:00","2023-04-21T00:00:00","2023-04-22T00:00:00","2023-04-22T00:00:00","2023-04-22T00:00:00","2023-04-22T00:00:00","2023-04-23T00:00:00","2023-04-24T00:00:00","2023-04-24T00:00:00","2023-04-24T00:00:00","2023-04-24T00:00:00","2023-04-25T00:00:00","2023-04-25T00:00:00","2023-04-25T00:00:00","2023-04-26T00:00:00","2023-04-26T00:00:00","2023-04-27T00:00:00","2023-04-27T00:00:00","2023-04-27T00:00:00","2023-04-28T00:00:00","2023-04-28T00:00:00","2023-04-28T00:00:00","2023-04-29T00:00:00","2023-04-29T00:00:00","2023-04-30T00:00:00","2023-04-30T00:00:00","2023-05-01T00:00:00","2023-05-02T00:00:00","2023-05-02T00:00:00","2023-05-03T00:00:00","2023-05-03T00:00:00","2023-05-04T00:00:00","2023-05-05T00:00:00","2023-05-06T00:00:00","2023-05-07T00:00:00","2023-05-07T00:00:00","2023-05-07T00:00:00","2023-05-08T00:00:00","2023-05-09T00:00:00","2023-05-09T00:00:00","2023-05-10T00:00:00","2023-05-10T00:00:00","2023-05-11T00:00:00","2023-05-11T00:00:00","2023-05-12T00:00:00","2023-05-12T00:00:00","2023-05-13T00:00:00","2023-05-14T00:00:00","2023-05-15T00:00:00","2023-05-18T00:00:00","2023-05-19T00:00:00","2023-05-20T00:00:00","2023-05-21T00:00:00","2023-05-22T00:00:00","2023-05-23T00:00:00","2023-05-24T00:00:00","2023-05-25T00:00:00","2023-05-27T00:00:00","2023-05-29T00:00:00","2023-06-03T00:00:00","2023-06-05T00:00:00","2023-06-08T00:00:00","2023-06-10T00:00:00"],"xaxis":"x","y":[-10.008514524416888,-20.789955310689617,-29.072207470986566,-45.46355637138734,-69.7688287300161,-77.0632231104446,-102.57689606514755,-106.5027959925845,-126.09004106905064,-106.68711542137063,-123.9064410230276,-121.60982931742797,-98.36525753498694,-76.39158463669344,-73.81160473830685,-73.81160473830685,-73.55626481780509,-73.55626481780509,-95.07326448005855,-10.464609108604748,-11.230903937008938,-18.610852542271775,-13.623395735783046,-23.44526891977656,-23.78454379718203,-41.554038636852496,-42.18894031881202,-22.02220811950773,32.869157768324015,22.32791681417109,61.689844240450164,46.17546408500248,80.97372028248832,56.8492665411307,58.80484735912455,43.18932980856492,96.22992880422778,107.8721032924482,100.36453849033265,82.30828367396121,69.29520066774803,98.68053111752448,93.63016320991083,148.37934935332075,132.973971120787,132.973971120787,185.363789966612,185.35075989554858,187.63098670486286,225.345430817501,247.31181491048324,227.91186315081723,206.63151883833953,198.43162002966847,202.49160441488655,196.69250499704592,215.15503375839006,207.63045909846707,203.8025888343034,200.42907293833773,193.94229634959012,249.99869950827093,253.6436124392452,253.6436124392452,245.6125031173119,226.42867783015063,222.71984910795754,222.71984910795754,222.10509866069268,222.10509866069268,217.01022093255267,221.93979033489953,210.57000402302924,210.57000402302924,206.7940464707477,207.7204935186946,236.89439203409256,231.29835784164604,258.3117665637695,244.18701193825765,244.78565452262873,238.50027684607366,240.0497051735883,238.84260781705723,242.06384722054833,260.4842984137523,252.7727774582715,268.02180416114845,248.94825704336893,260.08309985230005,261.83719472048443,259.23872151487467,246.4847468597154,254.3143219392429,254.3143219392429,233.46247796940074,233.46247796940074,232.5924715945727,258.6416941765097,240.68883254972027,229.7205625546029,233.4373155710409,233.4373155710409,233.53585353264356,233.53585353264356,232.1662008104865,234.28888495948794,243.75508069259723,229.6564233477718,222.5671592808839,209.72750031475314,222.5555338904307,206.8189133481439,195.84682983055126,179.5578898262116,179.5578898262116,171.6400933146892,192.77983009455963,187.96460642407942,230.98511052270183,219.55581178047606,202.6789737415907,203.63833632192606,184.21105923726037,181.34009944756343,216.43480963217092,217.02314967056697,209.20636380040682,209.64605361154884,209.64605361154884,187.89689900765902,187.89689900765902,211.39656489949456,200.68571913190678,190.75531715360532,178.84715973007923,187.1209017631393,204.8100565534992,217.8284660459739,220.95741195204477,220.95741195204477,220.95741195204477,220.95741195204477,200.67062774573014,184.67442172517627,184.67442172517627,201.61591479541968,201.61591479541968,218.48207719828375,270.8276364537826,252.15020675503615,248.5825877911034,230.8156304746388,254.69536540176153,241.96854744011708,249.47078645914203,273.0069501283427,273.64862283335754,290.39221694295134,280.5877542903951,324.11131656035946,324.11131656035946,308.4422662998037,304.9337880323706,338.2759887069812,330.57124155737444,335.5882274928676,354.5631534488817,380.43925110767987,380.43925110767987,380.43925110767987,384.42910641201513,384.42910641201513,381.73830836662137,381.73830836662137,374.8053475275471,374.380247813459,351.99520854257094,333.3691765138667,329.54508830064225,328.6306181242494,310.76752169665826,299.6822257480036,285.36218821364633,339.7419903324836,337.2714972888799,320.4869649353645,320.4869649353645,334.08687016991365,334.08687016991365,365.56273893189143,359.78281351523475,359.78281351523475,334.9792653418344,341.51488331550405,328.2041692919252,309.95920375677537,292.2689048627124,287.7300506956222,287.7300506956222,309.799067431734,290.2888295764728,320.4130987290364,305.923764574481,298.5514457189497,342.77110139622874,324.98425818186695,331.85242147516226,308.76341059485975,300.53171556229995,303.9960329965906,327.75092255375375,315.2008979983862,303.9451618921441,343.7939223578741,341.68663731877143,325.57424320571704,321.91570580144577,321.91570580144577,322.89616467560967,323.4496003785436,336.28649548551044,324.9361633588779,324.17272703426477,321.0681888701554,321.0681888701554,321.0681888701554,323.5648113047669,334.27951034671923,313.1811578085299,316.40593548885147,300.0449332369416,300.6562773939819,279.2993071396218,281.5233214883955,300.5843375778637,300.21142177865636,308.08750825579546,302.61874897522017,300.77285516042406,301.94004840482404,281.9210519971009,275.19988979416655,275.19988979416655,275.19988979416655,277.9271673473994,268.461675191056,247.41322424400033,247.41322424400033,247.41322424400033,228.3022342151206,247.3669109544695,243.85906353863373,235.55902975905866,235.55902975905866,258.38009682261816,254.6712412370883,254.6712412370883,285.8528795749229,269.1427633592029,271.74151335298757,271.74151335298757,266.9684781391347,266.9684781391347,262.84141102090405,243.42952734175057,243.42952734175057,250.6424862616135,276.18028843889243,274.8400472113609,274.8400472113609,263.5590762497273,248.4150571964659,230.7241285891014,228.77553276436478,229.3731165845916,286.76891873167517,274.6561439012778,267.61516330493197,267.61516330493197,288.74268426778957,288.74268426778957,302.37423708792124,302.37423708792124,287.8135896241959,306.6633028749943,303.4451222186468,297.7640796796848,299.27508997030833,294.8625415668282,286.58053941707846,271.52266498059026,258.0987811450797,274.92822995959136,285.98943647711155,314.59779051921015,309.1031711242224,315.53626700711254,324.1202107466698,326.03661843945656,325.3799225659732,325.3799225659732,305.8885893350802,303.8393055385982,303.8393055385982,298.7212460918738,300.83121371991325,302.33089516034545,302.33089516034545,305.0341139114899,289.4107119433209,289.4107119433209,287.69288361640304,279.32943898397775,279.32943898397775,279.32943898397775,269.1677625356581,270.05483550834987,268.94211132594677,274.2945817869601,255.5248309095241,248.61260526207116,273.97054019647686,265.1211083106967,262.5365369405917,265.0715806984511,265.0715806984511,248.68531443027257,230.54196058284015,234.20879563418754,234.20879563418754,249.7584066939154,262.7980729335441,286.4381106099999,280.75971113702093,279.7859628396125,272.57767604193873,309.5940939536031,313.67571662588125,320.8835474147295,323.4294528898083,367.11411462205075,355.7178223173448,349.25686926667555,338.33327248293074,324.6852522412497,309.50297835833794,316.7428861629183,308.6497988808799,293.030914594321,303.5242268736553,315.52167233365566,299.14635748732184,299.14635748732184,290.6358389005292,305.0278437628183,316.2367155548982,300.7166243303072,330.3150795006797,342.70459414398437,348.1465251038637,340.93284181379227,345.62446152863754,330.4566942984347,325.0290760722659,325.0290760722659,307.7901738517951,307.7901738517951,316.7144204750686,321.15523004561,328.9090590697995,316.1391810814139,300.9607258809521,305.42798187004087,291.01336321966534,279.60162582678146,280.8909041152006,291.12352930698813,291.05257956102434,277.10666236735335,285.14822316854486,294.1595332392562,298.2490411011851,317.7832956342762,313.40539544348866,302.91555365413143,283.9155178631478,271.1215280000783,271.1215280000783,268.65145205396766,269.1600223499742,261.4590714276139,262.02573830429355,259.70153801589635,261.6411007718367,263.12957651534145,262.0147569217074,253.76427645420537,254.84863086314542,267.7364414315793,267.7364414315793,260.99463694514594,259.0198727173353,247.7102909831534,246.28791144754163,246.28791144754163,249.75075607029646,237.12297877144434,225.41291630683642,244.71631391191255,244.71631391191255,236.0968345750058,243.8588101281008,240.06923554264975,240.35386380819745,228.8651397543395,217.19500501583474,221.0416626480301,233.02529712135117,219.13566679211868,232.05030428969982,217.7966389257949,206.15036068674956,195.70987885598726,195.70987885598726,208.10137862463208,228.85422435420026,221.8711715072875,255.20378152222588,255.9204975498691,256.94608420394525,282.6326626163098,268.9068101481483,268.9068101481483,259.6626410435137,259.6626410435137,257.5200205722196,262.8435231476851,250.87865003695796,264.5061118270036,257.5552957438863,257.5552957438863,259.13886303619023,261.21972165464587,272.57252300798757,308.7899232571143,307.11120543691504,307.11120543691504,300.28649325922584,300.28649325922584,287.5184017631236,292.85088696855814,282.62391121000553,274.7614035493444,285.30142571088265,298.02208390102385,298.02208390102385,287.6664915310831,283.49997955341524,283.49997955341524,270.1189020489049,267.4914193282858,260.54787083512946,257.57184164477735,257.57184164477735,250.68648016313787,248.09897600587433,248.09897600587433,251.26762516952712,257.7863940861979,245.05185268151854,241.83694779405928,252.36931536794356,249.54645832076721,240.64460950907142,229.7585241422967,218.2056208638723,210.75083730144263,219.72149487116457,219.72149487116457,225.80270733234775,227.5585933088238,220.59053028994578,232.29331744431545,232.29331744431545,252.5821342878583,260.58079145980076,255.37495531873495,248.48208787280583,237.4803737171989,242.43086604991072,251.33796048287604,254.40618289492383,255.6358291307071,251.31912769472132,251.5004815946809,249.35559993025694,240.2650857104751,243.38628122045228,249.69877187464147,236.4455371593737,237.75349070622767,254.42908823332382,257.8353889710685,262.9796898091194,257.95231592935033,246.68607698277862,237.07525830950638,246.8003697886726,238.89967822967287,250.64074331767492,250.64074331767492,258.3460800333904,261.32055288219044,261.7257716115194,261.7257716115194,267.24954337063446,260.75838465267975,263.7783782601931,250.47307063915943,258.54657004278926,276.7468009842456,268.67513882949464,288.0742620925457,300.2103153800199,289.23449145588074,276.75920375341803,281.4666765709129,276.02475110981817,275.1744754732754,275.98123463980835,275.98123463980835,287.0482366494386,287.0482366494386,292.4634923215902,305.4201488040191,297.44492816488844,307.53984963502967,307.53984963502967,315.31749860615184,303.3655321474957,296.9011006213468,309.8980803140272,297.51357409524934,304.7036540677279,334.07891804717264,320.85383810581817,308.48581392255824,310.927934610579,310.927934610579,305.25900723951185,309.7213219773241,302.6806983837321,299.2192871823533,290.5856257132658,309.41960757719306,309.41960757719306,309.45218533656305,327.90790662456016,350.9726926815804,353.8346851919247,340.9906987686401,350.61222559270453,338.99573985661254,328.8957281335406,327.7190175165471,338.2401484254896,332.26006206567,319.70735279572153,319.70735279572153,323.90578789925473,323.90578789925473,323.90578789925473,323.90578789925473,323.78968293006676,323.78968293006676,323.78968293006676,323.78968293006676,312.56663899598317,312.56663899598317,330.5914187339296,323.65949169537265,318.829425088563,337.6905015738457,337.6905015738457,342.2858778137624,352.06637742088765,352.06637742088765,342.65358746597394,334.1604084631608,325.4164401625748,319.8968358267307,321.9370842651484,324.3082144168375,324.88347378396054,315.210117230928,305.23775488213585,303.5649800293571,303.5649800293571,316.6024276404797,318.35308156135005,318.35308156135005,321.559400082926,325.9650348695387,330.69354733077836,321.0438103041791,344.13541950894177,342.98864785177705,331.73500001731446,331.73500001731446,337.8223871563479,336.18857486064195,348.7389150658752,349.09474885271004,336.8312104674326,336.8312104674326,336.8312104674326,326.1639234798488,340.6041244391198,330.1854626065343,330.1854626065343,333.0623127108453,325.90451067772614,343.73665536991876,346.16396702668675,341.4206019670898,329.6858777265543,358.3259796502349,362.2219560007249,350.44837600320886,350.44837600320886,357.5772817281814,365.68523634986866,358.96356881227825,350.00522890412486,353.35684849817426,342.7422819240646,343.6769099124541,334.4189457896281,342.892843657282,339.3168843391138,335.34449977432246,328.81106712709715,338.35169081788354,327.93228421709387,319.83671070372196,306.7006612223825,306.7006612223825,310.32607219172456,311.886758920627,304.6129592342785,311.1613495570135,298.4362756300961,298.4362756300961,310.64144813005834,310.64144813005834,320.68698297967063,317.31715292952487,311.4132714725794,309.01821577127237,319.69108972903086,316.63480558622865,310.97676180029936,308.33388528017554,310.5779942983185,298.57730676771587,315.0288507098097,318.1427136040533,325.6063472375305,325.6063472375305,314.2756699573988,310.2583727093335,312.16289397528544,312.49505703891015,311.9461171405371,314.64213228695775,300.42724678561405,294.4542100058067,284.32032316835824,287.5878886859342,287.4567758403959,287.4567758403959,284.32155703125073,276.16467559054195,267.3995648064846,267.3995648064846,278.2163093390523,268.8621775413877,265.3485954976969,265.3485954976969,262.4805416791644,273.1022216491361,273.88765729807216,265.7404491354194,257.58066954813376,257.58066954813376,257.2008453100669,278.6340290315615,278.6340290315615,272.55468600913736,270.1204290821954,273.4368936306105,270.8694748480431,298.23522552299676,320.6304290035439,313.5672407746439,313.5672407746439,304.7739298018429,299.3993405521593,307.108878490082,308.7257498373141,302.1224289656572,292.00652272827426,285.96264349075756,292.0403881500545,308.5608314722642,313.4061322915202,307.18335600303914,298.77464750080867,295.60266078966924,304.86177222406263,298.14097481467087,308.7694127172886,327.643290547709,324.1598653733415,316.0428549657745,307.91589837458633,296.86825527582533,296.86825527582533,296.03185435372103,287.2303104626493,278.8578299685379,278.8578299685379,284.6506740196687,294.41721679310075,283.4737625860876,272.9298630157091,274.554172317349,274.554172317349,305.30216485542576,315.0058790869161,315.0058790869161,318.6860241091927,312.169886276385,312.169886276385,326.88832869975874,326.88832869975874,326.08841717368335,315.6534734795138,315.6534734795138,330.39707443768424,321.62114783209546,314.95471058962585,314.95471058962585,314.95471058962585,305.9817129997649,299.2861388029309,299.2861388029309,288.2151807625457,311.0502377697603,311.0502377697603,390.63920284347284,390.63920284347284,388.98304125548486,387.5312118367757,385.6759126858641,378.5434922385378,378.5434922385378,386.7167272805565,389.9042618062072,396.4176462840902,399.59425424173253,410.2042663891212,422.639174557517,413.92575441198034,402.5696657072837,416.681019575429,423.578983965855,423.578983965855,420.4291547953305,423.0573736713907,440.2920975047676,438.6256984190443,442.07629253209984,447.8672482951223,463.0421958675722,449.29302314672697,458.6059267470055,459.35344052817084,465.95764769300644,474.50559937257174,474.39050146993475,474.39050146993475,492.55392036908495,492.9597578305444,492.9597578305444,487.18497696497286,477.40336660968507,464.6578370172576,473.3566611358087,467.6614638867034,467.6614638867034,460.8696888917134,486.34755878885306,482.12678092681284,499.91855340382796,499.91855340382796,499.91855340382796,502.5473196263289,509.8067169755608,500.9652465625303,500.9652465625303,514.7291420868291,501.7311119430132,530.2216648713377,527.4593181267863,517.8377216677502,537.8627915945641,529.3807253286518,530.0116576458532,523.4704998235333,516.6211673629526,516.6211673629526,509.8371919019386,509.8371919019386,500.8448570546933,500.8448570546933,518.886677772687,508.10504491117155,500.0949534607518,511.65453487106146,512.1679582778766,496.07992905197636,498.2359247805173,491.46572569286377,497.8715041407686,496.38435351047247,496.38435351047247,485.55036521523635,491.49492494395383,480.16051696528694,516.5833594110898,514.0877415777187,514.0877415777187,514.5622754003474,526.97282122465,526.97282122465,521.6961192672971,513.982752541243,516.1642447643543,546.1760395560242,547.7120574185041,546.3071282735316,563.3886780238494,563.3886780238494,579.1384349949573,572.108430401522,572.108430401522,562.3893864296185,567.220141207048,569.1855452672468,569.1855452672468,569.1855452672468,559.1517315041749,559.1517315041749,574.0914295447976,574.0914295447976,602.7754091910572,591.5206016843098,591.5206016843098,592.1348578829173,590.323612215461,589.3334430914514,584.9691562586626,589.2813876590917,576.9334331361969,586.1265374118809,586.1265374118809,581.0361033931428,611.9279673162816,613.1616610097616,632.1211657331294,633.9139012859451,644.8896438038789,654.0823786965494,659.8247132046167,664.9220350073692,664.6626684513947,663.7359015661226,663.7359015661226,663.1117374064528,659.7157797488187,659.7157797488187,661.224772011285,647.2507492921114,634.8751300339353,622.3386632312976,622.8774355884926,635.5656616961694,635.6116521512835,638.0470073765687,646.3484039269672,636.919300633022,636.919300633022,642.9628461133626,651.6083186634415,653.2402789226174,660.4431665972028,664.6836325413987,663.7747233623639,656.5020982215599,646.1041279948031,649.5842456389516,640.0184169064771,631.3912145881756,627.3312377708428,622.9081539417704,633.6511563675235,633.6511563675235,634.2375654460141,634.2375654460141,629.3649097038373,629.3649097038373,607.2958433377754,596.9268546402901,595.609478737598,592.62275099953,607.3012128740096,607.3012128740096,609.2338349795197,616.6684757596557,614.3621617908202,627.2350618057613,627.2350618057613,630.5644580053026,625.0677091276618,613.8507108789386,601.98045981373,592.1628149432232,582.9072327143539,578.2359321140723,579.2674347582079,569.625433550404,573.0014208886588,573.0014208886588,564.0007152439078,555.2621323676411,564.8552207495998,575.5729550838881,575.5729550838881,578.3957373355943,582.2974859262781,586.7156469620176,584.6904539593123,581.4329926182792,589.1096667842169,579.9932665728694,572.8562559616557,605.2754100614433,610.6124748943245,601.4781251931058,601.4781251931058,618.993421925877,629.532399061199,629.532399061199,622.4330956918627,625.3289447340794,638.2515387942608,624.8375000398199,627.3313895674567,616.3505417070329,624.9780929795105,615.395727230368,621.9040049787945,621.9040049787945,621.9040049787945,616.5149363390389,627.5248780832711,627.5248780832711,638.177022527764,630.8005009951023,642.3060840144298,663.1659379736914,663.1659379736914,661.8189099436431,661.8189099436431,652.4252783131152,643.5031048707774,643.5031048707774,643.310514031111,632.1456044153297,624.7203877130938,626.9610860143578,636.1520884312248,637.0501506818931,637.0501506818931,637.0501506818931,645.0900521657691,648.113651306479,641.9222903772356,656.0261692145174,655.0582453802804,662.2461284940467,660.0774312869679,649.7413537848365,649.7413537848365,655.0716540759175,663.6661290119617,673.4199772776582,661.4211159427073,661.4211159427073,660.9609468533752,665.6927204982005,677.5590121580666,676.4361064542609,676.4361064542609,676.4361064542609,681.3196236354055,687.6507895986505,697.5015496678885,701.0334596454837,701.0334596454837,695.8177933286698,696.9439697798541,679.0337333890112,669.7451573803838,656.4486713528358,660.3447633818608,655.949562478371,656.3411621021626,667.1265039805352,673.4647525976476,663.2290245877284,662.101366383167,653.650664257017,653.650664257017,677.2156007395314,677.2156007395314,692.9973682664807,685.6473886542442,695.8403604747649,700.3611818915763,711.4811516023564,702.9519325013313,699.7053260833217,708.2892657693762,695.2888114700194,700.3686630293563,693.6784344587303,702.6411818806522,696.4677836335725,696.4677836335725,691.3274294055101,692.6314137306471,692.6314137306471,686.838332431158,690.5113546165333,702.309560387912,704.5856176211258,695.7113421073659,699.6961031198754,689.396138175987,684.2300291693302,674.4698088540214,694.1576735013962,694.1576735013962,684.7947434200621,684.7947434200621,695.5264506221122,695.2221769161605,694.8839742095006,683.11372990632,674.1679767805637,681.5115618959974,696.2345553361686,705.6692914946262,705.6692914946262,702.8117874847595,701.8415670582256,701.8415670582256,693.1068126527772,693.1068126527772,697.7732211168269,680.0357907874995,670.4075772095481,670.4075772095481,666.2194795973376,665.6317274868574,680.7697847485837,677.8865783021968,670.5515807784756,670.5515807784756,667.7102960188265,659.0052426548865,659.0052426548865,679.1508038460979,669.0051339344805,669.8945597528789,676.5803140715615,680.8290789790357,679.6245906093297,688.7071616811243,680.2083208347829,671.3604176387589,665.1171892213545,665.1171892213545,656.2048420937317,641.7478738363058,635.1319047292928,633.3335611770764,619.3220825567367,611.3185336386152,611.3185336386152,622.394504727619,617.2990514101463,611.6386243575313,622.5039961053576,622.8546400567891,622.8546400567891,626.8690532643044,630.1287875232302,624.5515743149766,622.8315934001286,622.8315934001286,622.8315934001286,618.265262091893,631.6284038425889,632.6442803646258,626.9138658489246,648.6434997981897,643.7451588086254,640.3212658291333,633.8224716381948,626.9466807147877,637.1281062832245,639.8950594287751,631.460978148812,622.0381352616746,608.3430521735861,599.7620020993511,600.9794491514587,623.1982987204409,615.9419137886205,627.3452183829794,618.7010525205756,624.5496142911422,621.4602349591875,620.8295584183004,620.8295584183004,620.8295584183004,620.8295584183004,613.847714036288,613.847714036288,606.363700400281,597.8436760381616,597.8436760381616,589.1825610883378,593.7971659459893,594.2280013420891,594.2280013420891,587.0824932075062,576.6558899055915,572.6194281643204,572.6194281643204,578.5840372204258,582.204690833537,571.0368568538668,569.4258868683614,569.4258868683614,576.0145205918105,569.6655548714339,569.6655548714339,569.6655548714339,555.9331374506883,559.4412348951574,570.8651299726289,564.0352957836639,560.7974013019023,560.7974013019023,560.7974013019023,560.7974013019023,570.6122541197476,566.1671185448765,558.619306284986,563.5512395329916,564.9041078685424,553.4892839055293,567.0050524229017,567.0050524229017,561.03259799389,561.03259799389,555.4266172273074,565.2955965701383,576.9480655481264,589.4855754422985,589.4855754422985,582.4645361421549,582.4645361421549,574.7138658072,565.4702746691269,560.6816662847704,567.9936328460927,558.4664433772349,551.228225713722,551.228225713722,567.2446199894791,567.1189422587607,571.1390114577424,575.6373536036342,568.6825249053553,568.6825249053553,573.03414693024,578.0894842837913,579.4294692338373,571.2866032107071,560.1550472801292,554.9342504006113,563.1912314094204,563.1912314094204,561.7414993486395,562.7852234238884,574.3058436633283,574.3058436633283,590.1237749296456,590.1237749296456,595.2489869311818,593.1009268739567,589.7545973624979,582.4799054223687,582.023159817861,582.023159817861,570.2877583163292,565.5732664256586,572.3781005548889,569.4844990291044,558.3667861126722,558.3667861126722,567.6618581395132,575.8217098269965,580.191835451402,582.3164373815727,586.0240712644218,589.6489518561253,594.8138102079713,597.4208972416366,582.8990399021652,574.6634902768708,574.2361596622543,577.4825239200944,592.7941231804446,599.0581783188204,599.0581783188204,591.9103792592829,591.9103792592829,583.4756130869793,591.580842793072,595.3936524615009,599.982809898371,599.3404043949307,619.1904164452903,623.7253035667592,621.4822560537153,625.0358831469325,640.3566243367877,624.7720373507192,624.7720373507192,631.7015729752183,626.3366237993936,641.225077934092,627.5726408515463,627.5726408515463,614.0123888682951,625.1225225833713,629.568897513876,640.9935554767526,632.7998129987002,644.004573573918,632.2053069045719,632.2053069045719,615.8502666767492,619.4755621003159,609.7454571925696,622.2488294290266,609.9071510306526,609.9071510306526,609.9071510306526,610.3976351037189,610.3976351037189,606.603960925306,612.9450309131499,607.0661515566119,604.7223468688578,606.8263966589451,608.6027094110124,608.6027094110124,608.6027094110124,608.6027094110124,613.752018416046],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"bgcolor":"rgb(17,17,17)","angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"ternary":{"bgcolor":"rgb(17,17,17)","aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3","gridwidth":2},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3","gridwidth":2},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3","gridwidth":2}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","subunitcolor":"#506784","showland":true,"showlakes":true,"lakecolor":"rgb(17,17,17)"},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"sliderdefaults":{"bgcolor":"#C8D4E3","borderwidth":1,"bordercolor":"rgb(17,17,17)","tickwidth":0},"mapbox":{"style":"dark"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Date"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Profit \u002f Loss"}},"legend":{"title":{"text":"season"},"tracegroupgap":0},"margin":{"t":60}},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('5edefc61-6339-47dd-8d4d-0b713de17684');
+var gd = document.getElementById('4b9cb1d3-85a8-493b-8ced-58de5c7a0f16');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{

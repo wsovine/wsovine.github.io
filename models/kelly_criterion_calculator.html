@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>Amplified Kelly Calculator</title>
+    <title>Kelly Criterion Calculator</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="../../assets/css/main.css"/>
@@ -22,7 +22,7 @@
     <nav>
         <ul>
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="#" class="active">Amplified Kelly Calculator</a></li>
+            <li><a href="#" class="active">Kelly Criterion Calculator</a></li>
         </ul>
     </nav>
 </header>
@@ -33,7 +33,7 @@
     <!-- Main -->
     <section id="main" class="wrapper">
         <div class="inner">
-            <h1 class="major">Amplified Kelly Calculator</h1>
+            <h1 class="major">Kelly Criterion Calculator</h1>
 
             <section>
                 <form method="post" action="#">
@@ -41,7 +41,7 @@
                     <div class="row gtr-uniform">
                         <div class="col-6">
                             <label for="bankroll">Bankroll</label>
-                            <input type="number" name="bankroll" id="bankroll" value=1000 placeholder="Bankroll" />
+                            <input type="number" name="bankroll" id="bankroll" value=100 placeholder="Bankroll" />
                         </div>
                         <div class="col-6">
                             <label for="odds">Odds</label>
@@ -126,8 +126,8 @@
     }
 
     function calculateKellyCriterion(bankroll, impliedProbability, actualProbability) {
-        let dec = 1 / impliedProbability;
-        // let dec = (1 / impliedProbability) - 1;
+        // let dec = 1 / impliedProbability;
+        let dec = (1 / impliedProbability) - 1;
         let probLoss = 1 - actualProbability;
         let amount = (actualProbability - probLoss / dec) * (bankroll / 10);
         if (actualProbability <= impliedProbability) {
