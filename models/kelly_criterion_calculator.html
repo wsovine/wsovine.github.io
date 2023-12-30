@@ -129,7 +129,7 @@
         // let dec = 1 / impliedProbability;
         let dec = (1 / impliedProbability) - 1;
         let probLoss = 1 - actualProbability;
-        let amount = (actualProbability - probLoss / dec) * (bankroll / 10);
+        let amount = (actualProbability - probLoss / dec) * bankroll;
         if (actualProbability <= impliedProbability) {
             return 0;
         } else {
